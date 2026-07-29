@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .tooltip-container { position: relative; cursor: pointer; transition: all 0.2s; display: inline-block; }
+    .tooltip { position: absolute; top: -50px; left: 50%; transform: translateX(-50%); background: #333; color: #fff; padding: 5px 10px; border-radius: 5px; opacity: 0; transition: 0.3s; pointer-events: none; white-space: nowrap; font-size: 0.8rem; }
+    .tooltip-container:hover .tooltip { opacity: 1; top: -60px; }
+    .toaster { width: 60px; transition: 0.3s; }
+    .tooltip-container:hover .toaster { transform: translateY(-5px); }
+    .hero-box { background: linear-gradient(120deg, #dcfce7 0%, #ecfccb 100%); border-radius: 30px; padding: 80px 40px; text-align: center; }
+    .hero-title { font-size: 3.5rem; font-weight: 800; color: #064e3b; }
+    .feature-card { border: none; border-radius: 20px; padding: 40px 30px; background: white; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.08); transition: 0.4s; text-decoration: none; display: block; color: inherit; }
+    .feature-card:hover { transform: translateY(-15px); }
+    .icon-circle { width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin: 0 auto 25px; background: #f3f4f6; transition: 0.3s; }
+    .feature-card:hover .icon-circle { background: var(--primary); color: white; }
+</style>
+
+<div class="hero-box mb-5 animate__animated animate__zoomIn">
+    <span class="badge bg-success bg-opacity-25 text-success mb-3 px-3 py-2 rounded-pill">🚀 New: Smart Chatbot</span>
+    <h1 class="hero-title mb-4">Your Health, <br> <span style="color: var(--primary);">Intelligently Designed</span></h1>
+    <p class="lead text-muted mb-5">AI-driven nutrition, localized recipes, and smart fitness tracking.</p>
+    <div class="d-flex justify-content-center gap-3 align-items-center">
+        <a href="/diet/" class="btn btn-primary btn-lg px-5 rounded-pill shadow-lg">Start Diet Plan</a>
+        <a href="/food/" class="btn btn-light btn-lg px-5 rounded-pill border shadow-sm">Chat with Chef</a>
+        <div class="tooltip-container ms-4">
+            <span class="tooltip">I'm cooking logic!</span>
+            <svg class="toaster" viewBox="0 0 88 50" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="88" height="50"></rect><path d="M13.9561 1.74707H67.7607C73.9513 1.74707 78.9695 6.76558 78.9697 12.9561V48.0791H2.74707V12.9561C2.74733 6.76574 7.76574 1.74732 13.9561 1.74707Z" fill="#505050" stroke="#C0BABA" stroke-width="1.5"></path><rect x="2.5" y="43.3" width="76.7" height="5" fill="#A6A4A4" stroke="#C0BABA"></rect><circle cx="67.7" cy="24.9" r="3" fill="#A6A4A4"></circle></svg>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+        <a href="/diet/" class="feature-card">
+            <div class="text-center">
+                <div class="icon-circle">🥑</div>
+                <h3 class="fw-bold">Smart Diet Planner</h3>
+                <p class="text-muted">Calculated calorie deficits, meal plans & workout routines.</p>
+            </div>
+        </a>
+    </div>
+    <div class="col-md-6 animate__animated animate__fadeInUp" style="animation-delay: 0.4s;">
+        <a href="/food/" class="feature-card">
+            <div class="text-center">
+                <div class="icon-circle">🥘</div>
+                <h3 class="fw-bold">AI Chef Assistant</h3>
+                <p class="text-muted">Chat with a smart waiter to find the perfect recipe.</p>
+            </div>
+        </a>
+    </div>
+</div>
+{% endblock %}

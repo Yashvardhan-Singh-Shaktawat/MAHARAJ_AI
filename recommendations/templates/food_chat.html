@@ -1,0 +1,437 @@
+{% extends 'base.html' %}
+{% block content %}
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<style>
+    /* --- CHAT LAYOUT --- */
+    .chat-container { 
+        height: 80vh; 
+        display: flex; 
+        flex-direction: column; 
+        background: #fff; 
+        border-radius: 25px; 
+        box-shadow: 0 20px 40px rgba(0,0,0,0.1); 
+        overflow: hidden; 
+        border: 1px solid rgba(0,0,0,0.05);
+    }
+    .chat-header { 
+        background: linear-gradient(135deg, #10b981 0%, #059669 100%); 
+        padding: 15px 25px; 
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        color: white; 
+    }
+    .chat-body { 
+        flex: 1; 
+        padding: 25px; 
+        overflow-y: auto; 
+        background: #f0fdf4; 
+        scroll-behavior: smooth; 
+    }
+    
+    /* --- INPUT AREA & CHIPS --- */
+    .chat-footer { background: white; border-top: 1px solid #eee; padding: 15px; }
+    
+    .suggestion-scroll { 
+        display: flex; gap: 10px; 
+        overflow-x: auto; 
+        padding-bottom: 10px; margin-bottom: 5px; 
+        scrollbar-width: none; /* Hide scrollbar */
+    }
+    .suggestion-scroll::-webkit-scrollbar { display: none; }
+
+    .chip { 
+        background: #e0f2f1; color: #00695c; 
+        border: 1px solid #b2dfdb; 
+        padding: 6px 16px; border-radius: 50px; 
+        font-size: 0.85rem; font-weight: 500; 
+        cursor: pointer; transition: 0.2s; white-space: nowrap; 
+    }
+    .chip:hover { background: #00695c; color: white; transform: translateY(-2px); }
+    
+    .chat-input-area { display: flex; gap: 15px; align-items: center; }
+    .custom-input { 
+        border-radius: 50px; border: 2px solid #e5e7eb; 
+        padding: 12px 25px; flex-grow: 1; 
+        transition: 0.3s; background: #f9fafb; font-size: 1rem;
+    }
+    .custom-input:focus { 
+        border-color: #10b981; box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1); 
+        background: white; outline: none;
+    }
+    .send-btn { 
+        width: 50px; height: 50px; border-radius: 50%; 
+        background: #10b981; color: white; border: none; 
+        font-size: 1.2rem; transition: 0.3s; 
+        box-shadow: 0 4px 10px rgba(16, 185, 129, 0.3);
+    }
+    .send-btn:hover { transform: scale(1.1); background: #059669; }
+
+    /* --- AVATAR ANIMATION --- */
+    .chef-avatar-container { position: relative; width: 50px; height: 50px; margin-right: 15px; }
+    .chef-head { width: 40px; height: 40px; background: #ffe0bd; border-radius: 50%; position: absolute; bottom: 0; left: 5px; border: 2px solid #333; transition: 0.2s; }
+    .chef-hat { width: 50px; height: 35px; background: white; border-radius: 30px 30px 5px 5px; position: absolute; bottom: 35px; left: 0; border: 2px solid #333; }
+    .eyes { display: flex; justify-content: center; gap: 10px; margin-top: 15px; }
+    .eye { width: 6px; height: 6px; background: #333; border-radius: 50%; animation: blink 4s infinite; }
+    .mouth { width: 10px; height: 5px; border-bottom: 2px solid #333; border-radius: 50%; margin: 2px auto 0; }
+    
+    .is-writing .eye { transform: translateY(4px); } /* Look down */
+    .is-writing { animation: bob 0.4s infinite alternate; }
+    
+    @keyframes blink { 0%, 96%, 100% { transform: scaleY(1); } 98% { transform: scaleY(0.1); } }
+    @keyframes bob { from { transform: translateY(0); } to { transform: translateY(3px); } }
+
+    /* --- MESSAGES --- */
+    .msg { 
+        max-width: 80%; padding: 12px 18px; 
+        border-radius: 18px; margin-bottom: 15px; 
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
+        animation: fadeIn 0.3s ease; font-size: 0.95rem;
+    }
+    .msg-bot { background: white; border-top-left-radius: 4px; border: 1px solid #e5e7eb; color: #374151; }
+    .msg-user { background: #10b981; color: white; margin-left: auto; border-top-right-radius: 4px; }
+    
+    /* --- RECIPE CARDS --- */
+    .scroll-row { display: flex; overflow-x: auto; padding: 10px 5px; gap: 15px; }
+    .scroll-row::-webkit-scrollbar { height: 6px; }
+    .scroll-row::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+    .mini-card { 
+        min-width: 260px; max-width: 260px; 
+        background: white; border-radius: 15px; 
+        border: 1px solid #eee; overflow: hidden; 
+        transition: 0.3s; display: flex; flex-direction: column;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    }
+    .mini-card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.1); border-color: #10b981; }
+    
+    /* --- CHECKLIST STYLES --- */
+    .step-item { cursor: pointer; transition: background 0.2s; border: none; border-bottom: 1px solid #f1f5f9; }
+    .step-item:hover { background-color: #f8f9fa; }
+    .step-item input:checked + span { text-decoration: line-through; color: #94a3b8; }
+
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+
+<div class="row">
+    <div class="col-lg-3 d-none d-lg-block">
+        <div class="glass-card p-4 sticky-top" style="top: 100px;">
+            <h6 class="fw-bold text-success mb-3">⚙️ KITCHEN PREFS</h6>
+            
+           <label class="small fw-bold text-muted">🗣️ LANGUAGE</label>
+            <div class="input-box">
+              
+                <select id="lang" class="form-select">
+                    <option value="en" selected>English</option>
+                    <optgroup label="🇮🇳 Indian Languages">
+                        <option value="hi">Hindi (हिंदी)</option>
+                        <option value="bn">Bengali (বাংলা)</option>
+                        <option value="mr">Marathi (मराठी)</option>
+                        <option value="te">Telugu (తెలుగు)</option>
+                        <option value="ta">Tamil (தமிழ்)</option>
+                        <option value="gu">Gujarati (ગુજરાતી)</option>
+                        <option value="ur">Urdu (اردو)</option>
+                        <option value="kn">Kannada (ಕನ್ನಡ)</option>
+                        <option value="ml">Malayalam (മലയാളം)</option>
+                        <option value="pa">Punjabi (ਪੰਜਾਬੀ)</option>
+                        <option value="or">Odia (ଓଡ଼ିଆ)</option>
+                    </optgroup>
+                    <optgroup label="🌍 International">
+                        <option value="es">Spanish (Español)</option>
+                        <option value="fr">French (Français)</option>
+                        <option value="de">German (Deutsch)</option>
+                        <option value="it">Italian (Italiano)</option>
+                        <option value="pt">Portuguese (Português)</option>
+                        <option value="ru">Russian (Русский)</option>
+                        <option value="ja">Japanese (日本語)</option>
+                        <option value="zh-CN">Chinese (Simplified)</option>
+                        <option value="ar">Arabic (العربية)</option>
+                    </optgroup>
+                </select></div>
+
+            <label class="small text-muted fw-bold">🥦 DIET TYPE</label>
+            <select id="food_type" class="form-select mb-3 shadow-sm border-0 bg-light">
+                <option value="All">All</option>
+                <option value="Veg">Vegetarian</option>
+                <option value="Non-Veg">Non-Veg</option>
+            </select>
+
+          <label class="small text-muted fw-bold">🌍 Region</label>
+            <select id="region" class="form-select mb-3">
+                <option value="All">All Regions</option>
+                <option value="Indian">Indian</option>
+                <option value="North Indian">North Indian</option>
+                <option value="South Indian">South Indian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+                <option value="Mexican">Mexican</option>
+            </select>
+
+            <label class="small text-muted fw-bold">🚫 ALLERGIES</label>
+            <input type="text" id="allergies" class="form-control shadow-sm border-0 bg-light" placeholder="e.g. Peanuts">
+        </div>
+    </div>
+
+    <div class="col-lg-9">
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="d-flex align-items-center">
+                    <div id="chef-avatar" class="chef-avatar-container">
+                        <div class="chef-hat"></div>
+                        <div class="chef-head">
+                            <div class="eyes"><div class="eye"></div><div class="eye"></div></div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 class="mb-0 fw-bold">Maharaj AI</h5>
+                        <small class="opacity-75">Your Digital Waiter</small>
+                    </div>
+                </div>
+                <span class="badge bg-white text-success rounded-pill px-3 shadow-sm">Online</span>
+            </div>
+            
+            <div id="chatbox" class="chat-body">
+                <div class="msg msg-bot">
+                    👋 <strong>Namaste!</strong> I specialize in Indian, Chinese, and Italian cuisines.<br>
+                    Ask for the <strong>Menu</strong>, say <strong>Surprise Me</strong>, or tell me what you crave!
+                </div>
+            </div>
+            
+            <div class="chat-footer">
+                <div class="suggestion-scroll">
+                    <div class="chip" onclick="sendQuickReply('Show Menu')">📜 Show Menu</div>
+                    <div class="chip" onclick="sendQuickReply('Surprise Me')">🎲 Surprise Me</div>
+                    <div class="chip" onclick="sendQuickReply('Spicy Food')">🔥 Spicy Food</div>
+                    <div class="chip" onclick="sendQuickReply('Chinese')">🍜 Chinese</div>
+                    <div class="chip" onclick="sendQuickReply('Sweet Dessert')">🍫 Sweet Dessert</div>
+                </div>
+                
+                <div class="chat-input-area">
+                    <input type="text" id="query" class="form-control custom-input" 
+                           placeholder="Type here... (e.g. 'I want Paneer')" 
+                           onkeypress="handleEnter(event)">
+                    <button id="sendBtn" onclick="sendFoodRequest()" class="send-btn">➤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="recipeModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content border-0 rounded-4 shadow-lg">
+      <div class="modal-header bg-success text-white">
+        <h5 class="modal-title fw-bold" id="modalTitle">Cooking Mode</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body p-0">
+        <img id="modalImg" src="" class="w-100" style="height:300px; object-fit:cover;">
+        
+        <div class="p-4">
+            <div class="d-flex justify-content-between mb-3">
+                <span class="badge bg-warning text-dark p-2 rounded-pill shadow-sm" id="modalCuisine"></span>
+                <span class="badge bg-secondary p-2 rounded-pill" id="modalCal"></span>
+            </div>
+            
+            <div class="sticky-top bg-white py-3 mb-2" style="top: 0px; z-index: 10; border-bottom:1px solid #f0f0f0;">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <label class="small fw-bold text-success text-uppercase">Cooking Progress</label>
+                    <span id="progressText" class="small fw-bold text-muted">0%</span>
+                </div>
+                <div class="progress" style="height: 10px; border-radius: 10px; background: #e9ecef;">
+                    <div id="cookingProgress" class="progress-bar bg-success" role="progressbar" style="width: 0%; border-radius: 10px; transition: width 0.5s;"></div>
+                </div>
+            </div>
+
+            <h6 class="text-success fw-bold">🥕 INGREDIENTS</h6>
+            <p id="modalIng" class="bg-light p-3 rounded-3 small text-muted border"></p>
+            
+            <h6 class="text-success fw-bold mt-4">👨‍🍳 INSTRUCTIONS (Check to complete)</h6>
+            <div id="modalStepsContainer" class="list-group list-group-flush border rounded-3 overflow-hidden"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    let currentRecipes = [];
+    const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80";
+    const avatar = document.getElementById('chef-avatar');
+    const inputField = document.getElementById('query');
+    let typingTimer;
+
+    // --- ANIMATION LOGIC ---
+    inputField.addEventListener('input', () => {
+        avatar.classList.add('is-writing');
+        clearTimeout(typingTimer);
+        typingTimer = setTimeout(() => avatar.classList.remove('is-writing'), 800);
+    });
+
+    function handleEnter(e) { if(e.key === 'Enter') sendFoodRequest(); }
+    
+    function sendQuickReply(text) { 
+        inputField.value = text; 
+        sendFoodRequest(); 
+    }
+
+    // --- MAIN SEARCH LOGIC ---
+    async function sendFoodRequest() {
+        let query = inputField.value.trim();
+        if(!query) return;
+        
+        let btn = document.getElementById('sendBtn');
+        btn.disabled = true;
+        
+        let chatbox = document.getElementById('chatbox');
+        chatbox.innerHTML += `<div class="msg msg-user">${query}</div>`;
+        inputField.value = '';
+        
+        // Typing indicator
+        let loadId = 'load-' + Date.now();
+        chatbox.innerHTML += `<div id="${loadId}" class="msg msg-bot text-muted"><span class="spinner-border spinner-border-sm me-2"></span> Thinking...</div>`;
+        chatbox.scrollTop = chatbox.scrollHeight;
+
+        let data = {
+            query: query,
+            allergies: document.getElementById('allergies').value,
+            region: document.getElementById('region').value,
+            food_type: document.getElementById('food_type').value,
+            lang: document.getElementById('lang').value
+        };
+
+        try {
+            let response = await fetch('/api/food/', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data) });
+            let result = await response.json();
+            
+            document.getElementById(loadId).remove();
+
+            if (result.is_chat) {
+                // Conversational Reply
+                chatbox.innerHTML += `<div class="msg msg-bot">${result.message}</div>`;
+            } else if (result.results && result.results.length > 0) {
+                // Recipe Cards
+                currentRecipes = result.results;
+                let cards = result.results.map((r, i) => `
+                    <div class="mini-card">
+                        <div onclick="openRecipe(${i})" style="cursor: pointer;">
+                            <img src="${r.image || FALLBACK_IMAGE}" style="width:100%; height:140px; object-fit:cover;">
+                            <div class="p-3 pb-0">
+                                <h6 class="fw-bold text-truncate mb-1 text-dark" title="${r.name}">${r.name}</h6>
+                                <small class="text-muted d-block mb-2">${r.calories} kcal</small>
+                            </div>
+                        </div>
+                        <div class="p-3 pt-2 mt-auto">
+                            <button onclick="openRecipe(${i})" class="btn btn-sm btn-outline-success w-100 mb-2 fw-bold">👨‍🍳 Cook This</button>
+                            <div class="d-flex justify-content-between border-top pt-2">
+                                <button onclick="sendFeedback('${r.name}', 'like')" class="btn btn-sm text-success p-0" title="Like"><i class="bi bi-hand-thumbs-up-fill"></i> Like</button>
+                                <button onclick="sendFeedback('${r.name}', 'dislike')" class="btn btn-sm text-danger p-0" title="Dislike"><i class="bi bi-hand-thumbs-down-fill"></i> Dislike</button>
+                            </div>
+                        </div>
+                    </div>`).join('');
+                
+                chatbox.innerHTML += `
+                    <div class="msg msg-bot" style="max-width: 100%; background: transparent; padding: 0; box-shadow: none; border:none;">
+                        <div class="mb-2 bg-white p-3 rounded border d-inline-block shadow-sm">${result.message}</div>
+                        <div class="scroll-row">${cards}</div>
+                    </div>`;
+            } else {
+                chatbox.innerHTML += `<div class="msg msg-bot">⚠️ Sorry, I couldn't find that. Try "Pasta" or "Curry".</div>`;
+            }
+        } catch (e) {
+            if(document.getElementById(loadId)) document.getElementById(loadId).remove();
+            chatbox.innerHTML += `<div class="msg msg-bot text-danger">❌ Offline. Check connection.</div>`;
+        } finally {
+            btn.disabled = false;
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+    }
+
+    // --- OPEN MODAL LOGIC ---
+    function openRecipe(index) {
+        let r = currentRecipes[index];
+        document.getElementById('modalTitle').innerText = r.name;
+        document.getElementById('modalImg').src = r.image || FALLBACK_IMAGE;
+        document.getElementById('modalCuisine').innerText = r.cuisine;
+        document.getElementById('modalCal').innerText = r.calories + " kcal";
+        document.getElementById('modalIng').innerText = r.ingredients;
+        
+        // Parse Steps
+        let steps = r.steps || "Instructions coming soon.";
+        let stepList = steps.split(/\r?\n|•|\d+\./).filter(s => s.trim().length > 5);
+        let container = document.getElementById('modalStepsContainer');
+        container.innerHTML = "";
+        
+        if (stepList.length === 0) stepList = [steps];
+
+        stepList.forEach((s, i) => {
+            container.innerHTML += `
+            <label class="list-group-item d-flex gap-3 step-item p-3">
+                <input class="form-check-input flex-shrink-0" type="checkbox" onchange="checkProgress(${stepList.length})">
+                <span class="pt-1 form-check-label">${s.trim()}</span>
+            </label>`;
+        });
+        
+        updateProgress(0, stepList.length);
+        new bootstrap.Modal(document.getElementById('recipeModal')).show();
+    }
+
+    // --- PROGRESS & CONFETTI FIX ---
+    function checkProgress(total) {
+        let checked = document.querySelectorAll('#modalStepsContainer input:checked').length;
+        updateProgress(checked, total);
+        
+        if (checked === total && total > 0) {
+            // 🎉 PLAY CONFETTI ON TOP OF MODAL (Z-Index Fix)
+            var duration = 3 * 1000;
+            var end = Date.now() + duration;
+
+            (function frame() {
+                confetti({
+                    particleCount: 5,
+                    angle: 60,
+                    spread: 55,
+                    origin: { x: 0 },
+                    zIndex: 9999 // <--- THIS FIXES IT
+                });
+                confetti({
+                    particleCount: 5,
+                    angle: 120,
+                    spread: 55,
+                    origin: { x: 1 },
+                    zIndex: 9999 // <--- THIS FIXES IT
+                });
+
+                if (Date.now() < end) {
+                    requestAnimationFrame(frame);
+                }
+            }());
+            
+            document.getElementById('modalTitle').innerText = "🎉 Dish Completed! Bon Appétit!";
+        }
+    }
+
+    function updateProgress(checked, total) {
+        let percent = total === 0 ? 0 : Math.round((checked / total) * 100);
+        let bar = document.getElementById('cookingProgress');
+        let text = document.getElementById('progressText');
+        
+        bar.style.width = percent + "%";
+        text.innerText = percent + "%";
+        
+        if(percent === 100) { 
+            bar.classList.add('bg-warning'); 
+        } else { 
+            bar.classList.remove('bg-warning'); 
+        }
+    }
+
+    async function sendFeedback(recipeName, action) {
+        try {
+            await fetch('/api/feedback/', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({ recipe: recipeName, action: action }) });
+        } catch(e) { console.error(e); }
+    }
+</script>
+{% endblock %}

@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    /* --- CARD HOVER ANIMATIONS --- */
+    .service-card {
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy smooth lift */
+        border: 1px solid rgba(0,0,0,0.05);
+        cursor: default;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-12px); /* Moves up */
+        box-shadow: 0 20px 40px rgba(16, 185, 129, 0.15) !important; /* Soft green glow */
+        border-color: var(--primary);
+    }
+
+    /* --- ICON ANIMATION --- */
+    .icon-box {
+        display: inline-block;
+        transition: transform 0.4s ease;
+    }
+    
+    .service-card:hover .icon-box {
+        transform: scale(1.2) rotate(5deg); /* Icons pop out */
+    }
+
+    /* --- FEATURED CARD HIGHLIGHT --- */
+    .featured-card {
+        border: 2px solid #10b981 !important;
+        box-shadow: 0 10px 30px rgba(16, 185, 129, 0.1);
+    }
+</style>
+
+<div class="text-center mb-5 animate__animated animate__zoomIn">
+    <h1 class="fw-bold">Our Premium Services</h1>
+    <p class="text-muted">Explore the suite of AI tools designed to optimize your health.</p>
+</div>
+
+<div class="row g-4">
+    <div class="col-lg-4">
+        <div class="glass-card service-card p-0 overflow-hidden h-100 d-flex flex-column">
+            <div class="bg-success bg-opacity-10 p-5 text-center">
+                <div class="icon-box"><span style="font-size: 4rem;">🥑</span></div>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column">
+                <h4 class="fw-bold">AI Diet Planner</h4>
+                <p class="text-muted mb-4">Customized meal plans based on your BMI, age, and workout goals.</p>
+                <ul class="list-unstyled small text-muted mb-4 flex-grow-1">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Calorie Deficit Calculation</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Veg/Non-Veg Options</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Beauty & Hydration Tips</li>
+                </ul>
+                <a href="/diet/" class="btn btn-outline-success w-100 rounded-pill mt-auto fw-bold">Create Plan</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="glass-card service-card featured-card p-0 overflow-hidden h-100 d-flex flex-column">
+            <div class="bg-success text-white p-5 text-center">
+                <div class="icon-box"><span style="font-size: 4rem;">🥘</span></div>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column">
+                <h4 class="fw-bold text-success">Smart AI Chef</h4>
+                <p class="text-muted mb-4">An intelligent chatbot that suggests recipes based on what you have.</p>
+                <ul class="list-unstyled small text-muted mb-4 flex-grow-1">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Ingredient-based Search</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Step-by-Step Cooking Mode</li>
+                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cuisine Filters (Indian, Chinese)</li>
+                </ul>
+                <a href="/food/" class="btn btn-success w-100 rounded-pill mt-auto fw-bold shadow-sm">Start Cooking</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="glass-card service-card p-0 overflow-hidden h-100 d-flex flex-column">
+            <div class="bg-primary bg-opacity-10 p-5 text-center">
+                <div class="icon-box"><span style="font-size: 4rem;">📊</span></div>
+            </div>
+            <div class="p-4 flex-grow-1 d-flex flex-column">
+                <h4 class="fw-bold">Progress Tracking</h4>
+                <p class="text-muted mb-4">Monitor your habits and save your favorite meals.</p>
+                <ul class="list-unstyled small text-muted mb-4 flex-grow-1">
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Save "Liked" Recipes</li>
+                    <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Personalized History</li>
+                    <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Activity Dashboard</li>
+                </ul>
+                <a href="/dashboard/" class="btn btn-outline-primary w-100 rounded-pill mt-auto fw-bold">View Dashboard</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

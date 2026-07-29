@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<style>
+    .dash-header { background: linear-gradient(135deg, #10b981 0%, #047857 100%); color: white; border-radius: 25px; padding: 40px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(16, 185, 129, 0.3); }
+    .stat-card { background: white; border-radius: 20px; padding: 25px; height: 100%; border: 1px solid #f0f0f0; transition: 0.3s; }
+    .stat-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+    .recipe-list-item { background: #fff; border-radius: 15px; padding: 15px; margin-bottom: 15px; border: 1px solid #eee; display: flex; justify-content: space-between; align-items: center; transition: 0.2s; }
+    .recipe-list-item:hover { background: #f9fafb; border-color: #10b981; }
+    .avatar-circle { width: 80px; height: 80px; background: rgba(255,255,255,0.2);overflow: hidden; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; margin-right: 20px; }
+    .avatar-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures image covers the circle without stretching */
+    }
+</style>
+
+<div class="dash-header d-flex align-items-center animate__animated animate__fadeInDown">
+    <div class="avatar-circle">
+        <img src="https://thumbs.dreamstime.com/b/chef-cook-man-wearing-restaurant-uniform-hat-d-vector-avatar-cartoon-professional-kitchen-staff-round-frame-plastic-style-418073771.jpg" alt="User Avatar"> 
+    </div>
+    <div>
+        <h2 class="fw-bold mb-0">Welcome back, {{ user.username }}!</h2>
+        <p class="mb-0 opacity-75">{{ user.email }}</p>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="stat-card animate__animated animate__fadeInUp">
+            <h5 class="text-muted fw-bold text-uppercase small mb-3">Your Activity</h5>
+            <div class="d-flex align-items-center mb-3">
+                <h1 class="fw-bold text-primary mb-0 me-3">{{ like_count }}</h1>
+                <span class="text-muted">Recipes<br>Liked</span>
+            </div>
+            <hr>
+            <div class="d-flex align-items-center">
+                <h1 class="fw-bold text-warning mb-0 me-3">V11</h1>
+                <span class="text-muted">AI Model<br>Version</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="glass-card p-4 h-100 animate__animated animate__fadeInUp" style="animation-delay: 0.2s;">
+            <h5 class="text-primary fw-bold mb-4"><i class="bi bi-heart-fill text-danger me-2"></i> Your Favorites</h5>
+            
+            {% if liked_recipes %}
+                <div style="max-height: 400px; overflow-y: auto; padding-right: 10px;">
+                    {% for recipe in liked_recipes %}
+                    <div class="recipe-list-item">
+                        <div class="d-flex align-items-center">
+                            <span class="fs-4 me-3">🥘</span>
+                            <h6 class="mb-0 fw-bold">{{ recipe.recipe_name }}</h6>
+                        </div>
+                        <span class="badge bg-light text-muted border">{{ recipe.timestamp|date:"M d" }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            {% else %}
+                <div class="text-center py-5 opacity-50">
+                    <div class="fs-1 mb-2">🍽️</div>
+                    <p>No favorites yet.<br>Go to the <strong>AI Chef</strong> and like some recipes!</p>
+                    <a href="/food/" class="btn btn-sm btn-primary rounded-pill mt-2">Find Food</a>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,3029 @@
+{
+  "Egg": {
+    "category": "Meat"
+  },
+  "Bread": {
+    "category": "Bakery"
+  },
+  "Rye Bread": {
+    "category": "Bakery"
+  },
+  "Wheaten Bread": {
+    "category": "Bakery"
+  },
+  "White Bread": {
+    "category": "Bakery"
+  },
+  "Wholewheat Bread": {
+    "category": "Bakery"
+  },
+  "Wort": {
+    "category": "Beverage"
+  },
+  "Arrack": {
+    "category": "Beverage Alcoholic"
+  },
+  "Beer": {
+    "category": "Beverage Alcoholic"
+  },
+  "Bantu Beer": {
+    "category": "Beverage Alcoholic"
+  },
+  "Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Anise Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Apple Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Armagnac Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Blackberry Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Cherry Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Cognac Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Papaya Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Pear Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Plum Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Raspberry Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Weinbrand Brandy": {
+    "category": "Beverage Alcoholic"
+  },
+  "Gin": {
+    "category": "Beverage Alcoholic"
+  },
+  "Rum": {
+    "category": "Beverage Alcoholic"
+  },
+  "Whisky": {
+    "category": "Beverage Alcoholic"
+  },
+  "Bourbon Whisky": {
+    "category": "Beverage Alcoholic"
+  },
+  "Canadian Whisky": {
+    "category": "Beverage Alcoholic"
+  },
+  "Finnish Whisky": {
+    "category": "Beverage Alcoholic"
+  },
+  "Japanese Whisky": {
+    "category": "Beverage Alcoholic"
+  },
+  "Malt Whisky": {
+    "category": "Beverage Alcoholic"
+  },
+  "Scotch": {
+    "category": "Beverage Alcoholic"
+  },
+  "Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Bilberry Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Botrytized Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Champagne": {
+    "category": "Beverage Alcoholic"
+  },
+  "Cider": {
+    "category": "Beverage Alcoholic"
+  },
+  "Plum Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Port Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Red Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Rose Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Sake": {
+    "category": "Beverage Alcoholic"
+  },
+  "Sherry": {
+    "category": "Beverage Alcoholic"
+  },
+  "Sparkling Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Strawberry Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "White Wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Coffee": {
+    "category": "Beverage"
+  },
+  "Mate": {
+    "category": "Beverage"
+  },
+  "Black Tea": {
+    "category": "Beverage"
+  },
+  "Green Tea": {
+    "category": "Beverage"
+  },
+  "Roibos Tea": {
+    "category": "Beverage"
+  },
+  "Barley": {
+    "category": "Cereal"
+  },
+  "Crispbread": {
+    "category": "Cereal"
+  },
+  "Malt": {
+    "category": "Cereal"
+  },
+  "Oats": {
+    "category": "Cereal"
+  },
+  "Rice": {
+    "category": "Cereal"
+  },
+  "Corn": {
+    "category": "Maize"
+  },
+  "Corn Oil": {
+    "category": "Maize"
+  },
+  "Popcorn": {
+    "category": "Maize"
+  },
+  "Sweetcorn": {
+    "category": "Maize"
+  },
+  "Butter": {
+    "category": "Dairy"
+  },
+  "Buttermilk": {
+    "category": "Dairy"
+  },
+  "Cheese": {
+    "category": "Dairy"
+  },
+  "Blue Cheese": {
+    "category": "Dairy"
+  },
+  "Camembert Cheese": {
+    "category": "Dairy"
+  },
+  "Cheddar Cheese": {
+    "category": "Dairy"
+  },
+  "Comte Cheese": {
+    "category": "Dairy"
+  },
+  "Cottage Cheese": {
+    "category": "Dairy"
+  },
+  "Cream Cheese": {
+    "category": "Dairy"
+  },
+  "Domiati Cheese": {
+    "category": "Dairy"
+  },
+  "Emmental Cheese": {
+    "category": "Dairy"
+  },
+  "Feta Cheese": {
+    "category": "Dairy"
+  },
+  "Goat Cheese": {
+    "category": "Dairy"
+  },
+  "Gruyere Cheese": {
+    "category": "Dairy"
+  },
+  "Limburger Cheese": {
+    "category": "Dairy"
+  },
+  "Mozzarella Cheese": {
+    "category": "Dairy"
+  },
+  "Munster Cheese": {
+    "category": "Dairy"
+  },
+  "Parmesan Cheese": {
+    "category": "Dairy"
+  },
+  "Provolone Cheese": {
+    "category": "Dairy"
+  },
+  "Romano Cheese": {
+    "category": "Dairy"
+  },
+  "Roquefort Cheese": {
+    "category": "Dairy"
+  },
+  "Russian Cheese": {
+    "category": "Dairy"
+  },
+  "Sheep Cheese": {
+    "category": "Dairy"
+  },
+  "Swiss Cheese": {
+    "category": "Dairy"
+  },
+  "Tilsit Cheese": {
+    "category": "Dairy"
+  },
+  "Ghee": {
+    "category": "Dairy"
+  },
+  "Milk": {
+    "category": "Dairy"
+  },
+  "Milk Fat": {
+    "category": "Dairy"
+  },
+  "Goat Milk": {
+    "category": "Dairy"
+  },
+  "Milk Powder": {
+    "category": "Dairy"
+  },
+  "Sheep Milk": {
+    "category": "Dairy"
+  },
+  "Skimmed Milk": {
+    "category": "Dairy"
+  },
+  "Yogurt": {
+    "category": "Dairy"
+  },
+  "Achilleas": {
+    "category": "Essential Oil"
+  },
+  "Arar": {
+    "category": "Essential Oil"
+  },
+  "Buchu": {
+    "category": "Essential Oil"
+  },
+  "Cajeput": {
+    "category": "Essential Oil"
+  },
+  "Camphor": {
+    "category": "Essential Oil"
+  },
+  "Cascarilla": {
+    "category": "Essential Oil"
+  },
+  "Cedar": {
+    "category": "Essential Oil"
+  },
+  "Chamomile": {
+    "category": "Essential Oil"
+  },
+  "Citronella Oil": {
+    "category": "Essential Oil"
+  },
+  "Citrus Peel Oil": {
+    "category": "Essential Oil"
+  },
+  "Eucalyptus Oil": {
+    "category": "Essential Oil"
+  },
+  "Fir": {
+    "category": "Essential Oil"
+  },
+  "Geranium": {
+    "category": "Essential Oil"
+  },
+  "Grapefruit Peel Oil": {
+    "category": "Essential Oil"
+  },
+  "Grass": {
+    "category": "Essential Oil"
+  },
+  "Hops Oil": {
+    "category": "Essential Oil"
+  },
+  "Hyacinth": {
+    "category": "Essential Oil"
+  },
+  "Hyssop Oil": {
+    "category": "Essential Oil"
+  },
+  "Lemon Grass": {
+    "category": "Essential Oil"
+  },
+  "Lemon Peel Oil": {
+    "category": "Essential Oil"
+  },
+  "Lime Peel Oil": {
+    "category": "Essential Oil"
+  },
+  "Lovage": {
+    "category": "Essential Oil"
+  },
+  "Mandarin Orange Peel Oil": {
+    "category": "Essential Oil"
+  },
+  "Mastic Gum": {
+    "category": "Essential Oil"
+  },
+  "Mentha Oil": {
+    "category": "Essential Oil"
+  },
+  "Myrrh": {
+    "category": "Essential Oil"
+  },
+  "Neroli Oil": {
+    "category": "Essential Oil"
+  },
+  "Orange Oil": {
+    "category": "Essential Oil"
+  },
+  "Orris": {
+    "category": "Essential Oil"
+  },
+  "Clary Sage": {
+    "category": "Essential Oil"
+  },
+  "Red Sage": {
+    "category": "Essential Oil"
+  },
+  "Spanish Sage": {
+    "category": "Essential Oil"
+  },
+  "Sandalwood": {
+    "category": "Essential Oil"
+  },
+  "Sea Buckthorns": {
+    "category": "Fruit"
+  },
+  "Sweet Grass": {
+    "category": "Essential Oil"
+  },
+  "Valerian": {
+    "category": "Essential Oil"
+  },
+  "Wattle": {
+    "category": "Essential Oil"
+  },
+  "Yarrow": {
+    "category": "Essential Oil"
+  },
+  "Ylang-Ylang": {
+    "category": "Essential Oil"
+  },
+  "Clam": {
+    "category": "Seafood"
+  },
+  "Crab": {
+    "category": "Seafood"
+  },
+  "Crayfish": {
+    "category": "Seafood"
+  },
+  "Kelp": {
+    "category": "Seafood"
+  },
+  "Krill": {
+    "category": "Seafood"
+  },
+  "Lobster": {
+    "category": "Seafood"
+  },
+  "Mollusc": {
+    "category": "Seafood"
+  },
+  "Oyster": {
+    "category": "Seafood"
+  },
+  "Prawn": {
+    "category": "Seafood"
+  },
+  "Scallop": {
+    "category": "Seafood"
+  },
+  "Shellfish": {
+    "category": "Seafood"
+  },
+  "Shrimp": {
+    "category": "Seafood"
+  },
+  "Trassi": {
+    "category": "Seafood"
+  },
+  "Squid": {
+    "category": "Seafood"
+  },
+  "Bonito": {
+    "category": "Fish"
+  },
+  "Caviar": {
+    "category": "Fish"
+  },
+  "Codfish": {
+    "category": "Fish"
+  },
+  "Fish": {
+    "category": "Fish"
+  },
+  "Fatty Fish": {
+    "category": "Fish"
+  },
+  "Lean Fish": {
+    "category": "Fish"
+  },
+  "Fish Oil": {
+    "category": "Fish"
+  },
+  "Smoked Fish": {
+    "category": "Fish"
+  },
+  "Salmon": {
+    "category": "Fish"
+  },
+  "Artichoke": {
+    "category": "Flower"
+  },
+  "Champaca": {
+    "category": "Flower"
+  },
+  "Jasmine": {
+    "category": "Flower"
+  },
+  "Lavendar": {
+    "category": "Flower"
+  },
+  "Rose": {
+    "category": "Flower"
+  },
+  "Apple": {
+    "category": "Fruit"
+  },
+  "Apple Sauce": {
+    "category": "Dish"
+  },
+  "Apricot": {
+    "category": "Fruit"
+  },
+  "Avocado": {
+    "category": "Fruit"
+  },
+  "Babaco": {
+    "category": "Fruit"
+  },
+  "Banana": {
+    "category": "Fruit"
+  },
+  "Beli": {
+    "category": "Fruit"
+  },
+  "Byrsonima crassifolia": {
+    "category": "Fruit"
+  },
+  "Cashew Apple": {
+    "category": "Fruit"
+  },
+  "Cherimoya": {
+    "category": "Fruit"
+  },
+  "Coconut": {
+    "category": "Fruit"
+  },
+  "Currant": {
+    "category": "Fruit"
+  },
+  "Black Currant": {
+    "category": "Fruit"
+  },
+  "Red Currant": {
+    "category": "Fruit"
+  },
+  "White Currant": {
+    "category": "Fruit"
+  },
+  "Dates": {
+    "category": "Fruit"
+  },
+  "Durian": {
+    "category": "Fruit"
+  },
+  "Elderberry": {
+    "category": "Fruit"
+  },
+  "Feijoa": {
+    "category": "Fruit"
+  },
+  "Fig": {
+    "category": "Fruit"
+  },
+  "Grape": {
+    "category": "Fruit"
+  },
+  "Guava": {
+    "category": "Fruit"
+  },
+  "Hogplum": {
+    "category": "Fruit"
+  },
+  "Jackfruit": {
+    "category": "Fruit"
+  },
+  "Kiwifruit": {
+    "category": "Fruit"
+  },
+  "Litchi": {
+    "category": "Fruit"
+  },
+  "Loquat": {
+    "category": "Fruit"
+  },
+  "Malay Apple": {
+    "category": "Fruit"
+  },
+  "Mango": {
+    "category": "Fruit"
+  },
+  "Melon": {
+    "category": "Fruit"
+  },
+  "Musk Melon": {
+    "category": "Fruit"
+  },
+  "Naranjilla": {
+    "category": "Fruit"
+  },
+  "Orange": {
+    "category": "Fruit"
+  },
+  "Bitter Orange": {
+    "category": "Fruit"
+  },
+  "Papaya": {
+    "category": "Fruit"
+  },
+  "Mountain Papaya": {
+    "category": "Fruit"
+  },
+  "Passionfruit": {
+    "category": "Fruit"
+  },
+  "Yellow Passionfruit": {
+    "category": "Fruit"
+  },
+  "Pawpaw": {
+    "category": "Fruit"
+  },
+  "Peach": {
+    "category": "Fruit"
+  },
+  "Pear": {
+    "category": "Fruit"
+  },
+  "Bartlett Pear": {
+    "category": "Fruit"
+  },
+  "Prickly Pear": {
+    "category": "Fruit"
+  },
+  "Pepino": {
+    "category": "Fruit"
+  },
+  "Pineapple": {
+    "category": "Fruit"
+  },
+  "Plum": {
+    "category": "Fruit"
+  },
+  "Plumcot": {
+    "category": "Fruit"
+  },
+  "Pumpkin": {
+    "category": "Fruit"
+  },
+  "Quince": {
+    "category": "Fruit"
+  },
+  "Chinese Quince": {
+    "category": "Fruit"
+  },
+  "Raisin": {
+    "category": "Fruit"
+  },
+  "Roseapple": {
+    "category": "Fruit"
+  },
+  "Sapodilla": {
+    "category": "Fruit"
+  },
+  "Soursop": {
+    "category": "Fruit"
+  },
+  "Spineless Monkey Orange": {
+    "category": "Fruit"
+  },
+  "Starfruit": {
+    "category": "Fruit"
+  },
+  "Tamarind": {
+    "category": "Fruit"
+  },
+  "Woodapple": {
+    "category": "Fruit"
+  },
+  "Bilberry": {
+    "category": "Fruit"
+  },
+  "Blackberry": {
+    "category": "Fruit"
+  },
+  "Blueberry": {
+    "category": "Fruit"
+  },
+  "Cherry": {
+    "category": "Fruit"
+  },
+  "Bitter Cherry": {
+    "category": "Fruit"
+  },
+  "Sour Cherry": {
+    "category": "Fruit"
+  },
+  "Sweet Cherry": {
+    "category": "Fruit"
+  },
+  "Cloudberry": {
+    "category": "Fruit"
+  },
+  "Cranberry": {
+    "category": "Fruit"
+  },
+  "Gooseberry": {
+    "category": "Fruit"
+  },
+  "Lingonberry": {
+    "category": "Fruit"
+  },
+  "Loganberry": {
+    "category": "Fruit"
+  },
+  "Raspberry": {
+    "category": "Fruit"
+  },
+  "Strawberry": {
+    "category": "Fruit"
+  },
+  "Strawberry Jam": {
+    "category": "Fruit"
+  },
+  "Bergamot": {
+    "category": "Fruit"
+  },
+  "Citrus Fruits": {
+    "category": "Fruit"
+  },
+  "Grapefruit": {
+    "category": "Fruit"
+  },
+  "Kumquat": {
+    "category": "Fruit"
+  },
+  "Lemon": {
+    "category": "Fruit"
+  },
+  "Lime": {
+    "category": "Fruit"
+  },
+  "Mandarin Orange": {
+    "category": "Fruit"
+  },
+  "Satsuma Orange": {
+    "category": "Fruit"
+  },
+  "Tangerine": {
+    "category": "Fruit"
+  },
+  "Vanilla": {
+    "category": "Fruit"
+  },
+  "Mushroom": {
+    "category": "Fungus"
+  },
+  "Truffle": {
+    "category": "Fungus"
+  },
+  "Angelica": {
+    "category": "Herb"
+  },
+  "Artemisia": {
+    "category": "Herb"
+  },
+  "Basil": {
+    "category": "Herb"
+  },
+  "Buckwheat": {
+    "category": "Herb"
+  },
+  "Calamus": {
+    "category": "Herb"
+  },
+  "Chervil": {
+    "category": "Herb"
+  },
+  "Coriander": {
+    "category": "Herb"
+  },
+  "Cornmint": {
+    "category": "Herb"
+  },
+  "Dill": {
+    "category": "Herb"
+  },
+  "Fennel": {
+    "category": "Herb"
+  },
+  "Fenugreek": {
+    "category": "Herb"
+  },
+  "Garlic": {
+    "category": "Herb"
+  },
+  "Lemon Balm": {
+    "category": "Herb"
+  },
+  "Liqourice": {
+    "category": "Herb"
+  },
+  "Mint": {
+    "category": "Herb"
+  },
+  "Rhubarb": {
+    "category": "Herb"
+  },
+  "Rosemary": {
+    "category": "Herb"
+  },
+  "Sage": {
+    "category": "Herb"
+  },
+  "Spearmint": {
+    "category": "Herb"
+  },
+  "Scotch Spearmint": {
+    "category": "Herb"
+  },
+  "Tarragon": {
+    "category": "Herb"
+  },
+  "Thyme": {
+    "category": "Herb"
+  },
+  "Beef": {
+    "category": "Meat"
+  },
+  "Beef Processed": {
+    "category": "Meat"
+  },
+  "Chicken": {
+    "category": "Meat"
+  },
+  "Frankfurter Sausage": {
+    "category": "Dish"
+  },
+  "Ham": {
+    "category": "Meat"
+  },
+  "Lamb": {
+    "category": "Meat"
+  },
+  "Meat": {
+    "category": "Meat"
+  },
+  "Mutton": {
+    "category": "Meat"
+  },
+  "Pork": {
+    "category": "Meat"
+  },
+  "Sukiyaki": {
+    "category": "Meat"
+  },
+  "Turkey": {
+    "category": "Meat"
+  },
+  "Almond": {
+    "category": "Nuts & Seed"
+  },
+  "Brazil Nut": {
+    "category": "Nuts & Seed"
+  },
+  "Cocoa": {
+    "category": "Nuts & Seed"
+  },
+  "Beans": {
+    "category": "Legume"
+  },
+  "Lima Beans": {
+    "category": "Legume"
+  },
+  "Kidney Beans": {
+    "category": "Legume"
+  },
+  "Peanut": {
+    "category": "Nuts & Seed"
+  },
+  "Peas": {
+    "category": "Legume"
+  },
+  "Soybean": {
+    "category": "Legume"
+  },
+  "Soybean Oil": {
+    "category": "Legume"
+  },
+  "Soybean Sauce": {
+    "category": "Plant"
+  },
+  "Filbert": {
+    "category": "Nuts & Seed"
+  },
+  "Hazelnut": {
+    "category": "Nuts & Seed"
+  },
+  "Macadamia Nut": {
+    "category": "Nuts & Seed"
+  },
+  "Pecans": {
+    "category": "Nuts & Seed"
+  },
+  "Walnut": {
+    "category": "Nuts & Seed"
+  },
+  "Muskmallow": {
+    "category": "Nuts & Seed"
+  },
+  "Sesame": {
+    "category": "Nuts & Seed"
+  },
+  "Allium": {
+    "category": "Plant"
+  },
+  "Alpinia": {
+    "category": "Plant"
+  },
+  "Ceriman": {
+    "category": "Plant"
+  },
+  "Chicory": {
+    "category": "Plant"
+  },
+  "Hops": {
+    "category": "Plant"
+  },
+  "Laurel": {
+    "category": "Plant"
+  },
+  "Myrtle": {
+    "category": "Plant"
+  },
+  "Olive": {
+    "category": "Plant"
+  },
+  "Pine": {
+    "category": "Plant"
+  },
+  "Sassafras": {
+    "category": "Plant"
+  },
+  "Tea": {
+    "category": "Plant"
+  },
+  "Fermented Tea": {
+    "category": "Plant"
+  },
+  "Tobacco": {
+    "category": "Plant"
+  },
+  "Watercress": {
+    "category": "Plant"
+  },
+  "Creosote": {
+    "category": "Plant"
+  },
+  "Honey": {
+    "category": "Plant"
+  },
+  "Macaroni": {
+    "category": "Plant"
+  },
+  "Mustard Oil": {
+    "category": "Plant"
+  },
+  "Peanut Butter": {
+    "category": "Plant"
+  },
+  "Peanut Oil": {
+    "category": "Plant"
+  },
+  "Rye": {
+    "category": "Cereal"
+  },
+  "Storax": {
+    "category": "Plant"
+  },
+  "Vinegar": {
+    "category": "Plant"
+  },
+  "Anise": {
+    "category": "Spice"
+  },
+  "Anise Hyssop": {
+    "category": "Spice"
+  },
+  "Star Anise": {
+    "category": "Spice"
+  },
+  "Caraway": {
+    "category": "Spice"
+  },
+  "Cardamom": {
+    "category": "Spice"
+  },
+  "Cassia": {
+    "category": "Spice"
+  },
+  "Celery": {
+    "category": "Spice"
+  },
+  "Cinnamon": {
+    "category": "Spice"
+  },
+  "Clove": {
+    "category": "Spice"
+  },
+  "Cumin": {
+    "category": "Spice"
+  },
+  "Ginger": {
+    "category": "Spice"
+  },
+  "Mace": {
+    "category": "Spice"
+  },
+  "Marjoram": {
+    "category": "Spice"
+  },
+  "Nutmeg": {
+    "category": "Spice"
+  },
+  "Oregano": {
+    "category": "Spice"
+  },
+  "Parsley": {
+    "category": "Spice"
+  },
+  "Pepper": {
+    "category": "Spice"
+  },
+  "Saffron": {
+    "category": "Spice"
+  },
+  "Turmeric": {
+    "category": "Spice"
+  },
+  "Green Beans": {
+    "category": "Vegetable"
+  },
+  "Chive": {
+    "category": "Vegetable"
+  },
+  "Endive": {
+    "category": "Vegetable"
+  },
+  "Leek": {
+    "category": "Vegetable"
+  },
+  "Lettuce": {
+    "category": "Vegetable"
+  },
+  "Okra": {
+    "category": "Vegetable"
+  },
+  "Onion": {
+    "category": "Vegetable"
+  },
+  "Shallot": {
+    "category": "Vegetable"
+  },
+  "Peppermint": {
+    "category": "Herb"
+  },
+  "Broccoli": {
+    "category": "Vegetable"
+  },
+  "Brussels Sprout": {
+    "category": "Vegetable"
+  },
+  "Cabbage": {
+    "category": "Vegetable"
+  },
+  "Cauliflower": {
+    "category": "Vegetable"
+  },
+  "Horseradish": {
+    "category": "Vegetable"
+  },
+  "Mustard": {
+    "category": "Vegetable"
+  },
+  "Radish": {
+    "category": "Vegetable"
+  },
+  "Turnip": {
+    "category": "Vegetable"
+  },
+  "Kohlrabi": {
+    "category": "Vegetable"
+  },
+  "Rutabaga": {
+    "category": "Vegetable"
+  },
+  "Wasabi": {
+    "category": "Vegetable"
+  },
+  "Capsicum": {
+    "category": "Vegetable"
+  },
+  "Cherry Pepper": {
+    "category": "Vegetable"
+  },
+  "Tomato": {
+    "category": "Vegetable"
+  },
+  "Chayote": {
+    "category": "Vegetable"
+  },
+  "Cucumber": {
+    "category": "Vegetable"
+  },
+  "Beetroot": {
+    "category": "Vegetable"
+  },
+  "Carrot": {
+    "category": "Vegetable"
+  },
+  "Parsnip": {
+    "category": "Vegetable"
+  },
+  "Sweet Potato": {
+    "category": "Vegetable"
+  },
+  "Asparagus": {
+    "category": "Vegetable"
+  },
+  "Cassava": {
+    "category": "Vegetable"
+  },
+  "Potato": {
+    "category": "Vegetable"
+  },
+  "Fried Potato": {
+    "category": "Bakery"
+  },
+  "Allspice": {
+    "category": "Spice"
+  },
+  "Asafoetida": {
+    "category": "Spice"
+  },
+  "Ashgourd": {
+    "category": "Vegetable"
+  },
+  "Bittergourd": {
+    "category": "Vegetable"
+  },
+  "Bottlegourd": {
+    "category": "Vegetable"
+  },
+  "Canola Oil": {
+    "category": "Essential Oil"
+  },
+  "Carom Seed": {
+    "category": "Spice"
+  },
+  "Chard": {
+    "category": "Vegetable"
+  },
+  "Apple Cider Vinegar": {
+    "category": "Plant"
+  },
+  "Colocasia": {
+    "category": "Vegetable"
+  },
+  "Curry Leaf": {
+    "category": "Herb"
+  },
+  "Drumstick Leaf": {
+    "category": "Vegetable"
+  },
+  "Eggplant": {
+    "category": "Vegetable"
+  },
+  "Flaxseed": {
+    "category": "Nuts & Seed"
+  },
+  "Jalapeno": {
+    "category": "Spice"
+  },
+  "Kenaf": {
+    "category": "Essential Oil"
+  },
+  "Lotus": {
+    "category": "Essential Oil"
+  },
+  "Nigella Seed": {
+    "category": "Nuts & Seed"
+  },
+  "Kewda": {
+    "category": "Essential Oil"
+  },
+  "Pomegranate": {
+    "category": "Fruit"
+  },
+  "Poppy Seed": {
+    "category": "Spice"
+  },
+  "Spinach": {
+    "category": "Vegetable"
+  },
+  "Turkey Berry": {
+    "category": "Vegetable"
+  },
+  "Water Chestnut": {
+    "category": "Fruit"
+  },
+  "White Pepper": {
+    "category": "Spice"
+  },
+  "Garcinia Indica": {
+    "category": "Fruit"
+  },
+  "Cluster Bean": {
+    "category": "Legume"
+  },
+  "Paneer": {
+    "category": "Dairy"
+  },
+  "Pigeon Pea": {
+    "category": "Legume"
+  },
+  "Basmati Rice": {
+    "category": "Cereal"
+  },
+  "Ricotta Cheese": {
+    "category": "Dairy"
+  },
+  "Silver linden": {
+    "category": "Herb"
+  },
+  "Redskin onion": {
+    "category": "Vegetable"
+  },
+  "Lemon verbena": {
+    "category": "Herb"
+  },
+  "Cashew nut": {
+    "category": "Nuts & Seed"
+  },
+  "Burdock": {
+    "category": "Vegetable"
+  },
+  "Borage": {
+    "category": "Herb"
+  },
+  "Capers": {
+    "category": "Herb"
+  },
+  "Safflower": {
+    "category": "Herb"
+  },
+  "Chestnut": {
+    "category": "Nuts & Seed"
+  },
+  "Chickpea": {
+    "category": "Legume"
+  },
+  "Pummelo": {
+    "category": "Fruit"
+  },
+  "Arabica coffee": {
+    "category": "Beverage"
+  },
+  "Japanese persimmon": {
+    "category": "Fruit"
+  },
+  "Black crowberry": {
+    "category": "Fruit"
+  },
+  "Rocket salad": {
+    "category": "Herb"
+  },
+  "Tartary buckwheat": {
+    "category": "Cereal"
+  },
+  "Black huckleberry": {
+    "category": "Fruit"
+  },
+  "Sunflower": {
+    "category": "Flower"
+  },
+  "Swamp cabbage": {
+    "category": "Vegetable"
+  },
+  "Grass pea": {
+    "category": "Legume"
+  },
+  "Lentils": {
+    "category": "Legume"
+  },
+  "Garden cress": {
+    "category": "Herb"
+  },
+  "Mexican oregano": {
+    "category": "Herb"
+  },
+  "Lupine": {
+    "category": "Plant"
+  },
+  "Medlar": {
+    "category": "Fruit"
+  },
+  "Mulberry": {
+    "category": "Fruit"
+  },
+  "Black mulberry": {
+    "category": "Fruit"
+  },
+  "Evening primrose": {
+    "category": "Herb"
+  },
+  "Millet": {
+    "category": "Legume"
+  },
+  "Scarlet bean": {
+    "category": "Legume"
+  },
+  "Pistachio": {
+    "category": "Nuts & Seed"
+  },
+  "Purslane": {
+    "category": "Plant"
+  },
+  "Red raspberry": {
+    "category": "Fruit"
+  },
+  "Black raspberry": {
+    "category": "Fruit"
+  },
+  "Sorrel": {
+    "category": "Herb"
+  },
+  "Summer savory": {
+    "category": "Herb"
+  },
+  "Winter savory": {
+    "category": "Herb"
+  },
+  "Cherry tomato": {
+    "category": "Fruit"
+  },
+  "Rowanberry": {
+    "category": "Fruit"
+  },
+  "Sorghum": {
+    "category": "Cereal"
+  },
+  "Dandelion": {
+    "category": "Flower"
+  },
+  "Linden": {
+    "category": "Herb"
+  },
+  "Small leaf linden": {
+    "category": "Plant"
+  },
+  "Wheat": {
+    "category": "Cereal"
+  },
+  "Sparkleberry": {
+    "category": "Fruit"
+  },
+  "Common verbena": {
+    "category": "Herb"
+  },
+  "Adzuki bean": {
+    "category": "Legume"
+  },
+  "Gram bean": {
+    "category": "Legume"
+  },
+  "Mung bean": {
+    "category": "Legume"
+  },
+  "Climbing bean": {
+    "category": "Legume"
+  },
+  "Muscadine grape": {
+    "category": "Fruit"
+  },
+  "Bayberry": {
+    "category": "Fruit"
+  },
+  "Elliott's blueberry": {
+    "category": "Fruit"
+  },
+  "Canada blueberry": {
+    "category": "Fruit"
+  },
+  "Buffalo currant": {
+    "category": "Fruit"
+  },
+  "Deerberry": {
+    "category": "Fruit"
+  },
+  "Ginseng": {
+    "category": "Vegetable"
+  },
+  "Longan": {
+    "category": "Plant"
+  },
+  "Rambutan": {
+    "category": "Fruit"
+  },
+  "Red rice": {
+    "category": "Cereal"
+  },
+  "Welsh onion": {
+    "category": "Vegetable"
+  },
+  "Hard wheat": {
+    "category": "Cereal"
+  },
+  "Triticale": {
+    "category": "Cereal"
+  },
+  "Komatsuna": {
+    "category": "Vegetable"
+  },
+  "Pak choy": {
+    "category": "Vegetable"
+  },
+  "Jostaberry": {
+    "category": "Fruit"
+  },
+  "Kai lan": {
+    "category": "Vegetable"
+  },
+  "Pineappple sage": {
+    "category": "Herb"
+  },
+  "Skunk currant": {
+    "category": "Fruit"
+  },
+  "Breakfast cereal": {
+    "category": "Cereal"
+  },
+  "Pasta": {
+    "category": "Bakery"
+  },
+  "Biscuit": {
+    "category": "Bakery"
+  },
+  "Sourdough": {
+    "category": "Cereal"
+  },
+  "Spirit": {
+    "category": "Beverage Alcoholic"
+  },
+  "Abalone": {
+    "category": "Fungus"
+  },
+  "Abiyuch": {
+    "category": "Plant"
+  },
+  "Acerola": {
+    "category": "Fruit"
+  },
+  "Acorn": {
+    "category": "Nuts & Seed"
+  },
+  "Winter squash": {
+    "category": "Fruit"
+  },
+  "Agar": {
+    "category": "Additive"
+  },
+  "Red king crab": {
+    "category": "Seafood"
+  },
+  "Alfalfa": {
+    "category": "Herb"
+  },
+  "Amaranth": {
+    "category": "Herb"
+  },
+  "Arrowhead": {
+    "category": "Vegetable"
+  },
+  "Arrowroot": {
+    "category": "Vegetable"
+  },
+  "Atlantic herring": {
+    "category": "Fish"
+  },
+  "Atlantic mackerel": {
+    "category": "Fish"
+  },
+  "Painted comber": {
+    "category": "Fish"
+  },
+  "Atlantic pollock": {
+    "category": "Fish"
+  },
+  "Atlantic wolffish": {
+    "category": "Fish"
+  },
+  "Bamboo shoots": {
+    "category": "Plant"
+  },
+  "Striped bass": {
+    "category": "Fish"
+  },
+  "Beaver": {
+    "category": "Meat"
+  },
+  "Beech nut": {
+    "category": "Nuts & Seed"
+  },
+  "Beluga whale": {
+    "category": "Fish"
+  },
+  "Bison": {
+    "category": "Meat"
+  },
+  "Black bear": {
+    "category": "Meat"
+  },
+  "Alaska blackfish": {
+    "category": "Fish"
+  },
+  "Northern bluefin tuna": {
+    "category": "Fish"
+  },
+  "Bluefish": {
+    "category": "Fish"
+  },
+  "Wild boar": {
+    "category": "Meat"
+  },
+  "Bowhead whale": {
+    "category": "Fish"
+  },
+  "Breadfruit": {
+    "category": "Fruit"
+  },
+  "Rapini": {
+    "category": "Vegetable"
+  },
+  "Brown bear": {
+    "category": "Meat"
+  },
+  "Buffalo": {
+    "category": "Meat"
+  },
+  "Burbot": {
+    "category": "Fish"
+  },
+  "Giant butterbur": {
+    "category": "Plant"
+  },
+  "American butterfish": {
+    "category": "Fish"
+  },
+  "Butternut": {
+    "category": "Nuts & Seed"
+  },
+  "Butternut squash": {
+    "category": "Fruit"
+  },
+  "Cardoon": {
+    "category": "Plant"
+  },
+  "Caribou": {
+    "category": "Meat"
+  },
+  "Natal plum": {
+    "category": "Fruit"
+  },
+  "Carob": {
+    "category": "Plant"
+  },
+  "Common carp": {
+    "category": "Fish"
+  },
+  "Channel catfish": {
+    "category": "Fish"
+  },
+  "Chia": {
+    "category": "Herb"
+  },
+  "Chinese chestnut": {
+    "category": "Nuts & Seed"
+  },
+  "Garland chrysanthemum": {
+    "category": "Flower"
+  },
+  "Cisco": {
+    "category": "Fish"
+  },
+  "Nuttall cockle": {
+    "category": "Fish"
+  },
+  "Common octopus": {
+    "category": "Seafood"
+  },
+  "Corn salad": {
+    "category": "Vegetable"
+  },
+  "Cottonseed": {
+    "category": "Plant"
+  },
+  "Catjang pea": {
+    "category": "Legume"
+  },
+  "Squashberry": {
+    "category": "Fruit"
+  },
+  "Atlantic croaker": {
+    "category": "Fish"
+  },
+  "Cusk": {
+    "category": "Fish"
+  },
+  "Cuttlefish": {
+    "category": "Fish"
+  },
+  "Mule deer": {
+    "category": "Meat"
+  },
+  "Devilfish": {
+    "category": "Fish"
+  },
+  "Dock": {
+    "category": "Herb"
+  },
+  "Dolphin fish": {
+    "category": "Fish"
+  },
+  "Freshwater drum": {
+    "category": "Fish"
+  },
+  "Wild duck": {
+    "category": "Meat"
+  },
+  "Freshwater eel": {
+    "category": "Fish"
+  },
+  "Elk": {
+    "category": "Meat"
+  },
+  "Emu": {
+    "category": "Meat"
+  },
+  "Oregon yampah": {
+    "category": "Plant"
+  },
+  "European anchovy": {
+    "category": "Fish"
+  },
+  "European chestnut": {
+    "category": "Nuts & Seed"
+  },
+  "Turbot": {
+    "category": "Fish"
+  },
+  "Fireweed": {
+    "category": "Herb"
+  },
+  "Florida pompano": {
+    "category": "Fish"
+  },
+  "Ginkgo nuts": {
+    "category": "Nuts & Seed"
+  },
+  "Greylag goose": {
+    "category": "Meat"
+  },
+  "Greenland halibut": {
+    "category": "Fish"
+  },
+  "Groundcherry": {
+    "category": "Fruit"
+  },
+  "Grouper": {
+    "category": "Fish"
+  },
+  "Haddock": {
+    "category": "Fish"
+  },
+  "Hippoglossus": {
+    "category": "Fish"
+  },
+  "Horse": {
+    "category": "Meat"
+  },
+  "Hyacinth bean": {
+    "category": "Legume"
+  },
+  "Irish moss": {
+    "category": "Seafood"
+  },
+  "Pacific jack mackerel": {
+    "category": "Fish"
+  },
+  "Japanese chestnut": {
+    "category": "Nuts & Seed"
+  },
+  "Jerusalem artichoke": {
+    "category": "Vegetable"
+  },
+  "Jujube": {
+    "category": "Fruit"
+  },
+  "Jute": {
+    "category": "Plant"
+  },
+  "Kale": {
+    "category": "Vegetable"
+  },
+  "King mackerel": {
+    "category": "Fish"
+  },
+  "Lambsquarters": {
+    "category": "Plant"
+  },
+  "Leather chiton": {
+    "category": "Seafood"
+  },
+  "Common ling": {
+    "category": "Fish"
+  },
+  "Lingcod": {
+    "category": "Fish"
+  },
+  "White lupine": {
+    "category": "Plant"
+  },
+  "Malabar spinach": {
+    "category": "Vegetable"
+  },
+  "Mammee apple": {
+    "category": "Fruit"
+  },
+  "Purple mangosteen": {
+    "category": "Fruit"
+  },
+  "Alpine sweetvetch": {
+    "category": "Plant"
+  },
+  "Milkfish": {
+    "category": "Fish"
+  },
+  "Monkfish": {
+    "category": "Fish"
+  },
+  "Moose": {
+    "category": "Meat"
+  },
+  "Moth bean": {
+    "category": "Legume"
+  },
+  "Mountain yam": {
+    "category": "Vegetable"
+  },
+  "Striped mullet": {
+    "category": "Fish"
+  },
+  "Muskrat": {
+    "category": "Meat"
+  },
+  "New Zealand spinach": {
+    "category": "Vegetable"
+  },
+  "Nopal": {
+    "category": "Plant"
+  },
+  "Ocean pout": {
+    "category": "Fish"
+  },
+  "North Pacific giant octopus": {
+    "category": "Seafood"
+  },
+  "Ohelo berry": {
+    "category": "Fruit"
+  },
+  "Opossum": {
+    "category": "Meat"
+  },
+  "Ostrich": {
+    "category": "Meat"
+  },
+  "Spotted seal": {
+    "category": "Seafood"
+  },
+  "Pacific herring": {
+    "category": "Fish"
+  },
+  "Pacific rockfish": {
+    "category": "Fish"
+  },
+  "Common persimmon": {
+    "category": "Fruit"
+  },
+  "Pheasant": {
+    "category": "Meat"
+  },
+  "Northern pike": {
+    "category": "Fish"
+  },
+  "Pili nut": {
+    "category": "Nuts & Seed"
+  },
+  "Colorado pinyon": {
+    "category": "Plant"
+  },
+  "Pitanga": {
+    "category": "Fruit"
+  },
+  "French plantain": {
+    "category": "Plant"
+  },
+  "American pokeweed": {
+    "category": "Herb"
+  },
+  "Polar bear": {
+    "category": "Meat"
+  },
+  "Prairie turnip": {
+    "category": "Vegetable"
+  },
+  "Quinoa": {
+    "category": "Cereal"
+  },
+  "European rabbit": {
+    "category": "Meat"
+  },
+  "Raccoon": {
+    "category": "Meat"
+  },
+  "Rainbow smelt": {
+    "category": "Fish"
+  },
+  "Rainbow trout": {
+    "category": "Fish"
+  },
+  "Malabar plum": {
+    "category": "Fruit"
+  },
+  "Rose hip": {
+    "category": "Fruit"
+  },
+  "Roselle": {
+    "category": "Herb"
+  },
+  "Orange roughy": {
+    "category": "Fish"
+  },
+  "Sablefish": {
+    "category": "Fish"
+  },
+  "Pink salmon": {
+    "category": "Fish"
+  },
+  "Chum salmon": {
+    "category": "Fish"
+  },
+  "Coho salmon": {
+    "category": "Fish"
+  },
+  "Sockeye salmon": {
+    "category": "Fish"
+  },
+  "Chinook salmon": {
+    "category": "Fish"
+  },
+  "Atlantic salmon": {
+    "category": "Fish"
+  },
+  "Salmonberry": {
+    "category": "Fruit"
+  },
+  "Common salsify": {
+    "category": "Plant"
+  },
+  "Spanish mackerel": {
+    "category": "Fish"
+  },
+  "Pacific sardine": {
+    "category": "Fish"
+  },
+  "Scup": {
+    "category": "Fish"
+  },
+  "Sea cucumber": {
+    "category": "Seafood"
+  },
+  "Steller sea lion": {
+    "category": "Seafood"
+  },
+  "Bearded seal": {
+    "category": "Seafood"
+  },
+  "Ringed seal": {
+    "category": "Seafood"
+  },
+  "Sea trout": {
+    "category": "Fish"
+  },
+  "Sesbania flower": {
+    "category": "Flower"
+  },
+  "American shad": {
+    "category": "Fish"
+  },
+  "Shark": {
+    "category": "Fish"
+  },
+  "Sheefish": {
+    "category": "Fish"
+  },
+  "Sheepshead": {
+    "category": "Fish"
+  },
+  "Hedge mustard": {
+    "category": "Vegetable"
+  },
+  "Snapper": {
+    "category": "Fish"
+  },
+  "Spelt": {
+    "category": "Cereal"
+  },
+  "Spirulina": {
+    "category": "Additive"
+  },
+  "Squab": {
+    "category": "Meat"
+  },
+  "Squirrel": {
+    "category": "Meat"
+  },
+  "Greater sturgeon": {
+    "category": "Fish"
+  },
+  "White sucker": {
+    "category": "Fish"
+  },
+  "Pumpkinseed sunfish": {
+    "category": "Fish"
+  },
+  "Swordfish": {
+    "category": "Fish"
+  },
+  "Taro": {
+    "category": "Vegetable"
+  },
+  "Teff": {
+    "category": "Herb"
+  },
+  "Tilefish": {
+    "category": "Fish"
+  },
+  "Mexican groundcherry": {
+    "category": "Fruit"
+  },
+  "Towel gourd": {
+    "category": "Vegetable"
+  },
+  "Salmonidae": {
+    "category": "Fish"
+  },
+  "Walleye": {
+    "category": "Fish"
+  },
+  "Alaska pollock": {
+    "category": "Fish"
+  },
+  "Whelk": {
+    "category": "Seafood"
+  },
+  "Broad whitefish": {
+    "category": "Fish"
+  },
+  "Whitefish": {
+    "category": "Fish"
+  },
+  "Whiting": {
+    "category": "Fish"
+  },
+  "Wild rice": {
+    "category": "Cereal"
+  },
+  "Tea leaf willow": {
+    "category": "Herb"
+  },
+  "Winged bean": {
+    "category": "Legume"
+  },
+  "Yam": {
+    "category": "Vegetable"
+  },
+  "Jicama": {
+    "category": "Vegetable"
+  },
+  "Yautia": {
+    "category": "Plant"
+  },
+  "Yellowfin tuna": {
+    "category": "Fish"
+  },
+  "Yellowtail amberjack": {
+    "category": "Fish"
+  },
+  "Pollock": {
+    "category": "Fish"
+  },
+  "Albacore tuna": {
+    "category": "Fish"
+  },
+  "Atlantic halibut": {
+    "category": "Fish"
+  },
+  "Smelt": {
+    "category": "Fish"
+  },
+  "Clupeinae": {
+    "category": "Fish"
+  },
+  "Spiny lobster": {
+    "category": "Seafood"
+  },
+  "Black-eyed pea": {
+    "category": "Legume"
+  },
+  "Deer": {
+    "category": "Meat"
+  },
+  "Percoidei": {
+    "category": "Fish"
+  },
+  "Perciformes": {
+    "category": "Fish"
+  },
+  "Rabbit": {
+    "category": "Meat"
+  },
+  "Beefalo": {
+    "category": "Meat"
+  },
+  "Bivalvia": {
+    "category": "Seafood"
+  },
+  "Flatfish": {
+    "category": "Fish"
+  },
+  "Walrus": {
+    "category": "Seafood"
+  },
+  "Alaska wild rhubarb": {
+    "category": "Plant"
+  },
+  "Oriental wheat": {
+    "category": "Cereal"
+  },
+  "Yardlong bean": {
+    "category": "Legume"
+  },
+  "Great horned owl": {
+    "category": "Meat"
+  },
+  "Quail": {
+    "category": "Meat"
+  },
+  "Boysenberry": {
+    "category": "Fruit"
+  },
+  "Rowal": {
+    "category": "Plant"
+  },
+  "Jew's ear": {
+    "category": "Fungus"
+  },
+  "Shiitake": {
+    "category": "Fungus"
+  },
+  "Purple laver": {
+    "category": "Seafood"
+  },
+  "Wakame": {
+    "category": "Seafood"
+  },
+  "Enokitake": {
+    "category": "Fungus"
+  },
+  "Epazote": {
+    "category": "Herb"
+  },
+  "Oyster mushroom": {
+    "category": "Fungus"
+  },
+  "Cloud ear fungus": {
+    "category": "Fungus"
+  },
+  "Maitake": {
+    "category": "Fungus"
+  },
+  "Ostrich fern": {
+    "category": "Plant"
+  },
+  "Spot croaker": {
+    "category": "Fish"
+  },
+  "Sourdock": {
+    "category": "Herb"
+  },
+  "Tinda": {
+    "category": "Vegetable"
+  },
+  "Atlantic menhaden": {
+    "category": "Fish"
+  },
+  "Agave": {
+    "category": "Plant"
+  },
+  "Narrowleaf cattail": {
+    "category": "Herb"
+  },
+  "Jellyfish": {
+    "category": "Seafood"
+  },
+  "Anchovy": {
+    "category": "Fish"
+  },
+  "Blue whiting": {
+    "category": "Fish"
+  },
+  "Carp bream": {
+    "category": "Fish"
+  },
+  "Chanterelle": {
+    "category": "Fungus"
+  },
+  "Sturgeon": {
+    "category": "Fish"
+  },
+  "Charr": {
+    "category": "Fish"
+  },
+  "Common dab": {
+    "category": "Fish"
+  },
+  "Spiny dogfish": {
+    "category": "Fish"
+  },
+  "Anatidae": {
+    "category": "Meat"
+  },
+  "Anguilliformes": {
+    "category": "Fish"
+  },
+  "True frog": {
+    "category": "Meat"
+  },
+  "Garfish": {
+    "category": "Fish"
+  },
+  "Gadiformes": {
+    "category": "Fish"
+  },
+  "Mountain hare": {
+    "category": "Meat"
+  },
+  "Lake trout": {
+    "category": "Fish"
+  },
+  "Lemon sole": {
+    "category": "Fish"
+  },
+  "Lumpsucker": {
+    "category": "Fish"
+  },
+  "Scombridae": {
+    "category": "Fish"
+  },
+  "Norway haddock": {
+    "category": "Fish"
+  },
+  "Norway pout": {
+    "category": "Fish"
+  },
+  "Oil palm": {
+    "category": "Plant"
+  },
+  "Sago palm": {
+    "category": "Plant"
+  },
+  "Persimmon": {
+    "category": "Fruit"
+  },
+  "Pikeperch": {
+    "category": "Fish"
+  },
+  "Pleuronectidae": {
+    "category": "Fish"
+  },
+  "Rock ptarmigan": {
+    "category": "Meat"
+  },
+  "Pacific ocean perch": {
+    "category": "Fish"
+  },
+  "Black salsify": {
+    "category": "Plant"
+  },
+  "True seal": {
+    "category": "Seafood"
+  },
+  "Red algae": {
+    "category": "Seafood"
+  },
+  "Kombu": {
+    "category": "Seafood"
+  },
+  "Snail": {
+    "category": "Meat"
+  },
+  "True sole": {
+    "category": "Fish"
+  },
+  "Catfish": {
+    "category": "Fish"
+  },
+  "Thistle": {
+    "category": "Plant"
+  },
+  "Common Tuna": {
+    "category": "Fish"
+  },
+  "Cetacea": {
+    "category": "Fish"
+  },
+  "Columbidae": {
+    "category": "Meat"
+  },
+  "Conch": {
+    "category": "Fish"
+  },
+  "Berry wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Vodka": {
+    "category": "Beverage Alcoholic"
+  },
+  "Ice cream": {
+    "category": "Dish"
+  },
+  "Vermouth": {
+    "category": "Beverage Alcoholic"
+  },
+  "Madeira wine": {
+    "category": "Beverage Alcoholic"
+  },
+  "Nougat": {
+    "category": "Dish"
+  },
+  "Toffee": {
+    "category": "Dish"
+  },
+  "Cake": {
+    "category": "Dish"
+  },
+  "Pizza": {
+    "category": "Dish"
+  },
+  "Ymer": {
+    "category": "Dairy"
+  },
+  "Pastry": {
+    "category": "Dish"
+  },
+  "Drag̩e": {
+    "category": "Dish"
+  },
+  "Chewing gum": {
+    "category": "Dish"
+  },
+  "Marzipan": {
+    "category": "Dish"
+  },
+  "Salad dressing": {
+    "category": "Dish"
+  },
+  "Salt": {
+    "category": "Additive"
+  },
+  "Cream": {
+    "category": "Dairy"
+  },
+  "Sugar": {
+    "category": "Additive"
+  },
+  "Sausage": {
+    "category": "Dish"
+  },
+  "Meatball": {
+    "category": "Dish"
+  },
+  "Pate": {
+    "category": "Dish"
+  },
+  "Meat bouillon": {
+    "category": "Dish"
+  },
+  "Whey": {
+    "category": "Dairy"
+  },
+  "Casein": {
+    "category": "Additive"
+  },
+  "Leavening agent": {
+    "category": "Additive"
+  },
+  "Marshmallow": {
+    "category": "Bakery"
+  },
+  "Gelatin": {
+    "category": "Additive"
+  },
+  "Water": {
+    "category": "Additive"
+  },
+  "Milk Human": {
+    "category": "Dairy"
+  },
+  "Dumpling": {
+    "category": "Dish"
+  },
+  "Soup": {
+    "category": "Dish"
+  },
+  "Syrup": {
+    "category": "Additive"
+  },
+  "Remoulade": {
+    "category": "Dish"
+  },
+  "Chocolate spread": {
+    "category": "Plant"
+  },
+  "Fruit gum": {
+    "category": "Dish"
+  },
+  "Meringue": {
+    "category": "Bakery"
+  },
+  "Cocoa butter": {
+    "category": "Plant"
+  },
+  "Cocoa powder": {
+    "category": "Plant"
+  },
+  "Chocolate": {
+    "category": "Plant"
+  },
+  "Hot chocolate": {
+    "category": "Beverage"
+  },
+  "Kefir": {
+    "category": "Dairy"
+  },
+  "Miso": {
+    "category": "Additive"
+  },
+  "Tofu": {
+    "category": "Plant"
+  },
+  "Zwieback": {
+    "category": "Dish"
+  },
+  "Roe": {
+    "category": "Fish"
+  },
+  "Cichlidae": {
+    "category": "Fish"
+  },
+  "Icing": {
+    "category": "Additive"
+  },
+  "Snack bar": {
+    "category": "Dish"
+  },
+  "Green turtle": {
+    "category": "Meat"
+  },
+  "Burrito": {
+    "category": "Dish"
+  },
+  "Hamburger": {
+    "category": "Dish"
+  },
+  "Taco": {
+    "category": "Dish"
+  },
+  "Tortilla": {
+    "category": "Dish"
+  },
+  "Nachos": {
+    "category": "Dish"
+  },
+  "Salad": {
+    "category": "Dish"
+  },
+  "Dulce de leche": {
+    "category": "Dairy"
+  },
+  "Topping": {
+    "category": "Additive"
+  },
+  "Sweet custard": {
+    "category": "Dairy"
+  },
+  "Egg roll": {
+    "category": "Dish"
+  },
+  "Heart of palm": {
+    "category": "Vegetable"
+  },
+  "Potato chip": {
+    "category": "Bakery"
+  },
+  "Tortilla chip": {
+    "category": "Bakery"
+  },
+  "Corn chip": {
+    "category": "Bakery"
+  },
+  "Hibiscus tea": {
+    "category": "Beverage"
+  },
+  "Stew": {
+    "category": "Dish"
+  },
+  "Gelatin dessert": {
+    "category": "Additive"
+  },
+  "Junket": {
+    "category": "Dairy"
+  },
+  "Falafel": {
+    "category": "Dish"
+  },
+  "Frybread": {
+    "category": "Dish"
+  },
+  "Lasagna": {
+    "category": "Dish"
+  },
+  "Morchella": {
+    "category": "Fungus"
+  },
+  "Pancake": {
+    "category": "Dish"
+  },
+  "Pectin": {
+    "category": "Additive"
+  },
+  "Pudding": {
+    "category": "Dish"
+  },
+  "Waffle": {
+    "category": "Dish"
+  },
+  "Soy milk": {
+    "category": "Beverage"
+  },
+  "Meatloaf": {
+    "category": "Dish"
+  },
+  "Cocktail": {
+    "category": "Beverage"
+  },
+  "Couscous": {
+    "category": "Dish"
+  },
+  "Bulgur": {
+    "category": "Cereal"
+  },
+  "Coffee mocha": {
+    "category": "Beverage"
+  },
+  "Chimichanga": {
+    "category": "Dish"
+  },
+  "Semolina": {
+    "category": "Cereal"
+  },
+  "Tapioca pearl": {
+    "category": "Vegetable"
+  },
+  "Tostada": {
+    "category": "Dish"
+  },
+  "Quesadilla": {
+    "category": "Dish"
+  },
+  "Baked potato": {
+    "category": "Dish"
+  },
+  "Hot dog": {
+    "category": "Dish"
+  },
+  "Spread": {
+    "category": "Additive"
+  },
+  "Enchilada": {
+    "category": "Dish"
+  },
+  "Ketchup": {
+    "category": "Dish"
+  },
+  "Adobo": {
+    "category": "Dish"
+  },
+  "Horned melon": {
+    "category": "Fruit"
+  },
+  "Hushpuppy": {
+    "category": "Dish"
+  },
+  "Fruit juice": {
+    "category": "Beverage"
+  },
+  "Relish": {
+    "category": "Dish"
+  },
+  "Fruit salad": {
+    "category": "Dish"
+  },
+  "Soy yogurt": {
+    "category": "Plant"
+  },
+  "Cold cut": {
+    "category": "Dish"
+  },
+  "Mixed nuts": {
+    "category": "Nuts & Seed"
+  },
+  "Babassu palm": {
+    "category": "Plant"
+  },
+  "Shea tree": {
+    "category": "Plant"
+  },
+  "Oil-seed Camellia": {
+    "category": "Plant"
+  },
+  "Ucuhuba": {
+    "category": "Plant"
+  },
+  "Phyllo dough": {
+    "category": "Bakery"
+  },
+  "Cooking oil": {
+    "category": "Additive"
+  },
+  "Pie crust": {
+    "category": "Bakery"
+  },
+  "Pie": {
+    "category": "Dish"
+  },
+  "Shortening": {
+    "category": "Additive"
+  },
+  "Soy cream": {
+    "category": "Dish"
+  },
+  "Ice cream cone": {
+    "category": "Dish"
+  },
+  "Molasses": {
+    "category": "Additive"
+  },
+  "Nance": {
+    "category": "Fruit"
+  },
+  "Natto": {
+    "category": "Dish"
+  },
+  "Ravioli": {
+    "category": "Dish"
+  },
+  "Scrapple": {
+    "category": "Dish"
+  },
+  "Succotash": {
+    "category": "Dish"
+  },
+  "Tamale": {
+    "category": "Dish"
+  },
+  "Rice cake": {
+    "category": "Dish"
+  },
+  "Tree fern": {
+    "category": "Plant"
+  },
+  "Evaporated milk": {
+    "category": "Dairy"
+  },
+  "Flour": {
+    "category": "Cereal"
+  },
+  "Akutaq": {
+    "category": "Dish"
+  },
+  "Pita bread": {
+    "category": "Bakery"
+  },
+  "Focaccia": {
+    "category": "Bakery"
+  },
+  "Bagel": {
+    "category": "Bakery"
+  },
+  "Piki bread": {
+    "category": "Bakery"
+  },
+  "French toast": {
+    "category": "Bakery"
+  },
+  "Oat bread": {
+    "category": "Bakery"
+  },
+  "Potato bread": {
+    "category": "Bakery"
+  },
+  "Cornbread": {
+    "category": "Bakery"
+  },
+  "Corn grits": {
+    "category": "Maize"
+  },
+  "Multigrain bread": {
+    "category": "Bakery"
+  },
+  "Rice bread": {
+    "category": "Bakery"
+  },
+  "Pan dulce": {
+    "category": "Bakery"
+  },
+  "Raisin bread": {
+    "category": "Bakery"
+  },
+  "Wonton wrapper": {
+    "category": "Bakery"
+  },
+  "Trail mix": {
+    "category": "Dish"
+  },
+  "Greenthread tea": {
+    "category": "Beverage"
+  },
+  "Vegetable juice": {
+    "category": "Beverage"
+  },
+  "Horchata": {
+    "category": "Beverage"
+  },
+  "Soft drink": {
+    "category": "Beverage"
+  },
+  "Milkshake": {
+    "category": "Beverage"
+  },
+  "Chocolate mousse": {
+    "category": "Bakery"
+  },
+  "Pupusa": {
+    "category": "Dish"
+  },
+  "Empanada": {
+    "category": "Dish"
+  },
+  "Arepa": {
+    "category": "Dish"
+  },
+  "Ascidians": {
+    "category": "Seafood"
+  },
+  "Gefilte fish": {
+    "category": "Dish"
+  },
+  "Yellow pond lily": {
+    "category": "Plant"
+  },
+  "Fish burger": {
+    "category": "Dish"
+  },
+  "Pot pie": {
+    "category": "Dish"
+  },
+  "Stuffing": {
+    "category": "Additive"
+  },
+  "Fudge": {
+    "category": "Bakery"
+  },
+  "Candy bar": {
+    "category": "Bakery"
+  },
+  "Condensed milk": {
+    "category": "Dairy"
+  },
+  "Margarine": {
+    "category": "Additive"
+  },
+  "Hummus": {
+    "category": "Dish"
+  },
+  "Potato puffs": {
+    "category": "Dish"
+  },
+  "Potato gratin": {
+    "category": "Dish"
+  },
+  "Chinese bayberry": {
+    "category": "Fruit"
+  },
+  "Green zucchini": {
+    "category": "Vegetable"
+  },
+  "Zucchini": {
+    "category": "Vegetable"
+  },
+  "Saskatoon berry": {
+    "category": "Fruit"
+  },
+  "Nanking cherry": {
+    "category": "Fruit"
+  },
+  "Japanese pumpkin": {
+    "category": "Fruit"
+  },
+  "Guinea hen": {
+    "category": "Meat"
+  },
+  "Cucurbita": {
+    "category": "Vegetable"
+  },
+  "Anise Oil": {
+    "category": "Fruit"
+  },
+  "Apple Juice": {
+    "category": "Fruit"
+  },
+  "Coconut Milk": {
+    "category": "Beverage"
+  },
+  "Coconut Oil": {
+    "category": "Fruit"
+  },
+  "Hops Beer": {
+    "category": "Beverage Alcoholic"
+  },
+  "Lemon Juice": {
+    "category": "Beverage"
+  },
+  "Brown Rice": {
+    "category": "Cereal"
+  },
+  "Tomato Juice": {
+    "category": "Beverage"
+  },
+  "Tomato Paste": {
+    "category": "Vegetable"
+  },
+  "Tomato Puree": {
+    "category": "Vegetable"
+  },
+  "Coriander Seed": {
+    "category": "Vegetable"
+  },
+  "Lard": {
+    "category": "Meat"
+  },
+  "Cured Ham": {
+    "category": "Meat"
+  },
+  "Cayenne": {
+    "category": "Spice"
+  },
+  "Yeast": {
+    "category": "Fungus"
+  },
+  "Tequila": {
+    "category": "Beverage Alcoholic"
+  },
+  "Sauerkraut": {
+    "category": "Vegetable"
+  },
+  "Baking Powder": {
+    "category": "Additive"
+  },
+  "Monosodium Glutamate": {
+    "category": "Additive"
+  },
+  "Citric Acid": {
+    "category": "Additive"
+  },
+  "Cooking Spray": {
+    "category": "Additive"
+  },
+  "Food Coloring": {
+    "category": "Additive"
+  },
+  "Liquid Smoke": {
+    "category": "Additive"
+  },
+  "Garam Masala": {
+    "category": "Spice"
+  },
+  "Ginger Garlic Paste": {
+    "category": "Spice"
+  },
+  "Coriander Cumin Seed Powder": {
+    "category": "Spice"
+  },
+  "Chaat Masala": {
+    "category": "Spice"
+  },
+  "Sambar Powder": {
+    "category": "Spice"
+  },
+  "Chole Masala": {
+    "category": "Spice"
+  },
+  "Rasam Powder": {
+    "category": "Spice"
+  },
+  "Tandoori Masala": {
+    "category": "Spice"
+  },
+  "Curry Powder": {
+    "category": "Spice"
+  },
+  "Panch Pharon Seed": {
+    "category": "Spice"
+  },
+  "Chicken Masala Powder": {
+    "category": "Spice"
+  },
+  "Goda Masala": {
+    "category": "Spice"
+  },
+  "Jal Jeera Powder": {
+    "category": "Spice"
+  },
+  "Ginger Garlic Coriander Leaves": {
+    "category": "Spice"
+  },
+  "Pulao Masala": {
+    "category": "Spice"
+  },
+  "Dabeli Masala": {
+    "category": "Spice"
+  },
+  "Cake Mix": {
+    "category": "Dish"
+  },
+  "Half Half": {
+    "category": "Dairy"
+  },
+  "Ale": {
+    "category": "Beverage Alcoholic"
+  },
+  "Vermicelli": {
+    "category": "Dish"
+  },
+  "Self Rising Flour": {
+    "category": "Cereal"
+  },
+  "Mayonnaise": {
+    "category": "Dish"
+  },
+  "Salt-Pepper": {
+    "category": "Additive"
+  },
+  "Croissant": {
+    "category": "Dish"
+  },
+  "Puff Pastry": {
+    "category": "Dish"
+  },
+  "Green Chutney": {
+    "category": "Spice"
+  },
+  "Cajun Seasoning": {
+    "category": "Spice"
+  },
+  "Vegetable Broth": {
+    "category": "Dish"
+  },
+  "Tandoori Paste": {
+    "category": "Dish"
+  },
+  "Mixed Vegetables": {
+    "category": "Vegetable"
+  },
+  "Salad Creme": {
+    "category": "Dish"
+  },
+  "Worcestershite Sauce": {
+    "category": "Dish"
+  },
+  "Coleslaw": {
+    "category": "Dish"
+  },
+  "Vegetable Stock": {
+    "category": "Vegetable"
+  },
+  "Mascarpone": {
+    "category": "Dish"
+  },
+  "Fettuccine": {
+    "category": "Dish"
+  },
+  "Italian Seasoning": {
+    "category": "Spice"
+  },
+  "Spinach Fettuccine": {
+    "category": "Dish"
+  },
+  "Hoisin Sauce": {
+    "category": "Dish"
+  },
+  "Barbeque Sauce": {
+    "category": "Dish"
+  },
+  "Sponge Cake": {
+    "category": "Dish"
+  },
+  "Baking Mix": {
+    "category": "Dish"
+  },
+  "Hot Sauce": {
+    "category": "Dish"
+  },
+  "Dried Mixed Fruit": {
+    "category": "Fruit"
+  },
+  "Candied Mixed Fruit": {
+    "category": "Fruit"
+  },
+  "Gulkand": {
+    "category": "Dish"
+  },
+  "Pancetta": {
+    "category": "Dish"
+  },
+  "Phyllo": {
+    "category": "Cereal"
+  },
+  "Pie Crust": {
+    "category": "Cereal"
+  },
+  "Prosciutto": {
+    "category": "Meat"
+  },
+  "Creole Seasoning": {
+    "category": "Spice"
+  },
+  "Chinese Five Spice Powder": {
+    "category": "Spice"
+  },
+  "Old Bay Seasoning": {
+    "category": "Spice"
+  },
+  "Adobo Sauce": {
+    "category": "Dish"
+  },
+  "Cracker Crumb": {
+    "category": "Dish"
+  },
+  "Ranch Dressing": {
+    "category": "Spice"
+  },
+  "Poultry Seasoning": {
+    "category": "Spice"
+  },
+  "Tahini": {
+    "category": "Dish"
+  },
+  "Herbe de Provence": {
+    "category": "Spice"
+  },
+  "Tart Shell": {
+    "category": "Dish"
+  },
+  "Bear": {
+    "category": "Meat"
+  },
+  "Whale": {
+    "category": "Fish"
+  },
+  "Seal": {
+    "category": "Fish"
+  },
+  "Tuna": {
+    "category": "Fish"
+  },
+  "Croaker": {
+    "category": "Fish"
+  },
+  "Mackerel": {
+    "category": "Fish"
+  },
+  "Perch": {
+    "category": "Fish"
+  },
+  "Hibiscus Tea": {
+    "category": "Dish"
+  },
+  "Octopus": {
+    "category": "Seafood"
+  },
+  "Oat Bread": {
+    "category": "Bakery"
+  },
+  "Pita Bread": {
+    "category": "Bakery"
+  },
+  "Raisin Bread": {
+    "category": "Bakery"
+  },
+  "Multigrain Bread": {
+    "category": "Bakery"
+  },
+  "Pout": {
+    "category": "Fish"
+  },
+  "Herring": {
+    "category": "Fish"
+  },
+  "Cooking Oil": {
+    "category": "Additive"
+  },
+  "Rice Cake": {
+    "category": "Bakery"
+  },
+  "Trout": {
+    "category": "Fish"
+  },
+  "Halibut": {
+    "category": "Fish"
+  },
+  "Cider Vinegar": {
+    "category": "Dish"
+  }
+}

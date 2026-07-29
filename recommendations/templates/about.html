@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row align-items-center mb-5 animate__animated animate__fadeIn">
+    <div class="col-lg-6">
+        <span class="badge bg-success bg-opacity-10 text-success mb-3 px-3 py-2 rounded-pill border border-success border-opacity-25">V21.0 Neural Engine</span>
+        <h1 class="fw-bold display-4 mb-3">The Brain Behind <br><span class="text-success">The Flavor.</span></h1>
+        <p class="lead text-muted">Maharaj AI isn't just a recipe book. It's a sophisticated machine learning model that understands the relationship between ingredients, nutrition, and your taste buds.</p>
+    </div>
+    <div class="col-lg-6 text-center">
+        <div style="font-size: 8rem;">🧠⚡</div>
+    </div>
+</div>
+
+<div class="row g-4 mb-5">
+    <div class="col-md-4">
+        <div class="glass-card p-4 h-100">
+            <div class="display-6 mb-3">📐</div>
+            <h5 class="fw-bold">Vector Space Model</h5>
+            <p class="text-muted small">We convert thousands of recipes into high-dimensional mathematical vectors using TF-IDF. This allows us to calculate "Taste Similarity" accurately.</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="glass-card p-4 h-100">
+            <div class="display-6 mb-3">💬</div>
+            <h5 class="fw-bold">NLP & Linguistics</h5>
+            <p class="text-muted small">Our Natural Language Processor handles spelling errors ("chiken"), translates cuisines, and understands intent ("I want something spicy").</p>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="glass-card p-4 h-100">
+            <div class="display-6 mb-3">🛡️</div>
+            <h5 class="fw-bold">Safety Guardrails</h5>
+            <p class="text-muted small">The model includes built-in logic gates to prevent unsafe diet advice and filter out gibberish queries instantly.</p>
+        </div>
+    </div>
+</div>
+
+<div class="bg-white p-5 rounded-5 border shadow-sm text-center">
+    <h3 class="fw-bold mb-4">Our Technology Stack</h3>
+    <div class="d-flex justify-content-center gap-4 flex-wrap text-muted fw-bold">
+        <span><i class="bi bi-braces"></i> Python</span>
+        <span><i class="bi bi-layers"></i> Django</span>
+        <span><i class="bi bi-graph-up"></i> Scikit-Learn</span>
+        <span><i class="bi bi-hdd"></i> Pandas</span>
+        <span><i class="bi bi-bootstrap"></i> Bootstrap 5</span>
+    </div>
+</div>
+{% endblock %}

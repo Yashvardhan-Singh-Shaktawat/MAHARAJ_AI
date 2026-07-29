@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    /* ===== Page Setup ===== */
+    body, html {
+        height: 100%;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    /* ===== Floating Veggies Container ===== */
+    .floating-veggies {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .veg {
+        position: absolute;
+        opacity: 0.5; /* Lower opacity for less distraction */
+        font-size: 3rem;
+        /* Slower transition makes the movement feel "heavy" and calm */
+        transition: transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1); 
+        will-change: transform;
+    }
+
+    /* ===== Initial Positions ===== */
+    .veg:nth-child(1) { top: 15%; left: 10%; }
+    .veg:nth-child(2) { top: 25%; right: 15%; font-size: 2.5rem; opacity: 0.3; }
+    .veg:nth-child(3) { bottom: 20%; left: 20%; }
+    .veg:nth-child(4) { bottom: 25%; right: 10%; font-size: 3.5rem; }
+    .veg:nth-child(5) { top: 50%; left: 50%; font-size: 2rem; opacity: 0.2; }
+    .veg:nth-child(6) { top: 10%; left: 40%; font-size: 2.8rem; }
+    .veg:nth-child(7) { bottom: 10%; right: 40%; font-size: 2.2rem; }
+
+    /* ===== Login Wrapper ===== */
+    .login-wrapper {
+        position: relative;
+        z-index: 2;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+    }
+
+    .glass-card {
+        background: rgba(255, 255, 255, 0.9); /* Slightly more opaque for readability */
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+    }
+</style>
+
+<div class="floating-veggies">
+    <span class="veg" data-speed="2">🥕</span>
+    <span class="veg" data-speed="-2">🍅</span>
+    <span class="veg" data-speed="1">🥦</span>
+    <span class="veg" data-speed="-1">🍆</span>
+    <span class="veg" data-speed="3">🌽</span>
+    <span class="veg" data-speed="-2">🥔</span>
+    <span class="veg" data-speed="2">🫑</span>
+</div>
+
+<div class="row justify-content-center login-wrapper">
+    <div class="col-md-5">
+        <div class="glass-card p-5">
+            <h2 class="text-center fw-bold text-success mb-4">Welcome Back</h2>
+
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+
+                <button type="submit"
+                    class="btn btn-primary w-100 rounded-pill py-2 mt-3 shadow-sm">
+                    Login
+                </button>
+            </form>
+
+            <p class="text-center mt-3 small text-muted">
+                New here? <a href="/signup/" class="text-decoration-none fw-bold">Create Account</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("mousemove", function (e) {
+    document.querySelectorAll(".veg").forEach(veg => {
+        const speed = veg.getAttribute("data-speed");
+        
+        // 1. DAMPENING FACTOR: 
+        // We divide by 150 (instead of 40) to make the movement very small
+        // This ensures the veggies only shift slightly, not across the whole screen.
+        const x = (window.innerWidth - e.pageX * speed) / 150;
+        const y = (window.innerHeight - e.pageY * speed) / 150;
+
+        // 2. SUBTLE ROTATION:
+        // We limit rotation to a tiny calculation so it doesn't spin wildly
+        const rotate = (window.innerWidth - e.pageX) / 100;
+
+        // Apply the transform
+        veg.style.transform = `translateX(${x}px) translateY(${y}px) rotate(${rotate}deg)`;
+    });
+});
+</script>
+
+{% endblock %}

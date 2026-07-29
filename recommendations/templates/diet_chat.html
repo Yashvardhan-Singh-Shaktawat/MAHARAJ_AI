@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% block content %}
+<style>
+    .input-group-text { background: white; border-right: none; color: var(--primary); }
+    .form-control, .form-select { border-left: none; box-shadow: none !important; }
+    .form-control:focus, .form-select:focus { border-color: #dee2e6; }
+    .input-box { border: 1px solid #dee2e6; border-radius: 10px; overflow: hidden; display: flex; align-items: center; margin-bottom: 15px; transition: 0.2s; }
+    .input-box:focus-within { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.1); }
+    .timeline-card { border: none; border-left: 5px solid var(--primary); background: white; border-radius: 15px; margin-bottom: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: 0.3s; cursor: pointer; }
+    .timeline-card:hover { transform: translateX(10px); }
+    .beauty-card { background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%); color: #333; border:none; border-radius:20px; }
+    .workout-card { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); color: #333; border:none; border-radius:20px; }
+</style>
+
+<div class="row">
+    <div class="col-lg-4 mb-4">
+        <div class="glass-card p-4 sticky-top" style="top: 100px; z-index: 10;">
+            <h4 class="fw-bold mb-4" style="color: var(--primary);">🥗 Design Your Plan</h4>
+            <label class="small fw-bold text-muted">🗣️ LANGUAGE</label>
+            <div class="input-box">
+                <span class="input-group-text">🌐</span>
+                <select id="lang" class="form-select">
+                    <option value="en" selected>English</option>
+                    <optgroup label="🇮🇳 Indian Languages">
+                        <option value="hi">Hindi (हिंदी)</option>
+                        <option value="bn">Bengali (বাংলা)</option>
+                        <option value="mr">Marathi (मराठी)</option>
+                        <option value="te">Telugu (తెలుగు)</option>
+                        <option value="ta">Tamil (தமிழ்)</option>
+                        <option value="gu">Gujarati (ગુજરાતી)</option>
+                        <option value="ur">Urdu (اردو)</option>
+                        <option value="kn">Kannada (ಕನ್ನಡ)</option>
+                        <option value="ml">Malayalam (മലയാളം)</option>
+                        <option value="pa">Punjabi (ਪੰਜਾਬੀ)</option>
+                        <option value="or">Odia (ଓଡ଼ିଆ)</option>
+                    </optgroup>
+                    <optgroup label="🌍 International">
+                        <option value="es">Spanish (Español)</option>
+                        <option value="fr">French (Français)</option>
+                        <option value="de">German (Deutsch)</option>
+                        <option value="it">Italian (Italiano)</option>
+                        <option value="pt">Portuguese (Português)</option>
+                        <option value="ru">Russian (Русский)</option>
+                        <option value="ja">Japanese (日本語)</option>
+                        <option value="zh-CN">Chinese (Simplified)</option>
+                        <option value="ar">Arabic (العربية)</option>
+                    </optgroup>
+                </select></div>
+            <label class="small fw-bold text-muted mt-2">STATS</label>
+            <div class="row g-2"><div class="col-6"><div class="input-box"><span class="input-group-text">⚖️</span><input type="number" id="weight" class="form-control" placeholder="Cur Kg"></div></div><div class="col-6"><div class="input-box"><span class="input-group-text">🎯</span><input type="number" id="target_weight" class="form-control" placeholder="Goal Kg"></div></div></div>
+            <label class="small fw-bold text-muted">PREFERENCES</label>
+            <div class="input-box"><span class="input-group-text">📅</span><input type="number" id="duration" class="form-control" placeholder="Days (e.g. 30)"></div>
+            <div class="input-box"><span class="input-group-text">💪</span><select id="workout_type" class="form-select"><option value="Home">Home Workout</option><option value="Gym">Gym Workout</option></select></div>
+            <div class="input-box"><span class="input-group-text">🥦</span><select id="food_type" class="form-select"><option value="All">All</option><option value="Veg">Veg</option><option value="Non-Veg">Non-Veg</option></select></div>
+            <button onclick="generatePlan()" class="btn btn-primary w-100 py-3 rounded-pill fw-bold mt-2">Generate Roadmap ✨</button>
+        </div>
+    </div>
+    <div class="col-lg-8"><div id="planArea"><div class="text-center p-5 mt-5 opacity-50 animate__animated animate__fadeIn"><div style="font-size: 5rem;">📋</div><h3 class="mt-3">Ready to Transform?</h3><p>Enter your details on the left.</p></div></div></div>
+</div>
+
+<div class="modal fade" id="recipeModal" tabindex="-1"><div class="modal-dialog modal-lg"><div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title" id="modalTitle"></h5><button class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><img id="modalImg" class="w-100 rounded mb-3" style="height:300px; object-fit:cover;"><div class="d-flex justify-content-between mb-3"><span class="badge bg-warning text-dark" id="modalCuisine"></span><span class="badge bg-secondary" id="modalCal"></span></div><h6>Ingredients</h6><p id="modalIng" class="bg-light p-3 rounded"></p><h6>Steps</h6><p id="modalSteps" style="white-space: pre-line;"></p></div></div></div></div>
+
+<script>
+let currentPlan = [];
+const FALLBACK_IMAGE = "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=600&q=80";
+
+async function generatePlan() {
+    let planArea = document.getElementById('planArea');
+    planArea.innerHTML = `<div class="text-center mt-5"><div class="spinner-border text-success" style="width: 3rem; height: 3rem;"></div><h5 class="mt-3 text-muted">Designing your life...</h5></div>`;
+    let data = { weight: document.getElementById('weight').value, target_weight: document.getElementById('target_weight').value, duration: document.getElementById('duration').value, workout_type: document.getElementById('workout_type').value, food_type: document.getElementById('food_type').value, lang: document.getElementById('lang').value, age: 25, diet_style: 'standard', sugar: 'no' };
+    try {
+        let response = await fetch('/api/diet/', { method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(data) });
+        let result = await response.json();
+        if (result.plan && result.plan.length > 0) {
+            currentPlan = result.plan;
+            let beauty = result.beauty_tip || {};
+            let ex = result.exercise_plan || {};
+            let workoutHtml = '';
+            if (ex.name) {
+                let exList = Array.isArray(ex.exercises) ? ex.exercises.map(e=>`<li>${e}</li>`).join('') : `<li>${ex.exercises}</li>`;
+                workoutHtml = `<div class="card workout-card mb-4 p-4 shadow-sm animate__animated animate__fadeInDown"><div class="d-flex align-items-center justify-content-between"><div><h6 class="text-uppercase opacity-75 fw-bold mb-1">Daily Training</h6><h3 class="fw-bold mb-0">${ex.name}</h3><small>${ex.benefits}</small></div><span style="font-size: 3rem;">🏋️</span></div><hr style="opacity: 0.2;"><div class="row"><div class="col-4 text-center border-end border-dark border-opacity-10"><strong>${ex.duration}</strong><br><span class="small">Mins</span></div><div class="col-4 text-center border-end border-dark border-opacity-10"><strong>${ex.calories}</strong><br><span class="small">Kcal</span></div><div class="col-4 text-center"><strong>${ex.intensity}</strong><br><span class="small">Level</span></div></div><ul class="mt-3 mb-0 ps-3 small">${exList}</ul></div>`;
+            }
+            let beautyHtml = '';
+            if (beauty.goal) {
+                beautyHtml = `<div class="card beauty-card mb-4 p-3 shadow-sm animate__animated animate__fadeInDown" style="animation-delay: 0.1s;"><div class="d-flex align-items-center"><span class="me-3 p-3 bg-white rounded-circle shadow-sm" style="font-size: 1.5rem;">✨</span><div><h5 class="fw-bold mb-1">${beauty.goal}</h5><p class="mb-0 small">🥤 ${beauty.drink} • 🧖‍♀️ ${beauty.instruction}</p></div></div></div>`;
+            }
+            let mealsHtml = `<h5 class="fw-bold text-muted mb-3 animate__animated animate__fadeIn">🍽️ Nutrition Roadmap</h5>`;
+            result.plan.forEach((meal, i) => {
+                let delay = 0.2 + (i * 0.1);
+                mealsHtml += `<div class="card timeline-card p-3 animate__animated animate__fadeInUp" style="animation-delay: ${delay}s;" onclick="openDietRecipe(${i})"><div class="d-flex align-items-center"><img src="${meal.image || FALLBACK_IMAGE}" class="rounded" style="width: 80px; height: 80px; object-fit: cover; margin-right: 15px;"><div class="flex-grow-1"><div class="d-flex justify-content-between"><span class="badge bg-success bg-opacity-10 text-success">${meal.meal}</span><small class="text-muted">Tap for Recipe 👆</small></div><h5 class="fw-bold mt-1 mb-1 text-dark">${meal.name}</h5><small class="text-muted">🔥 ${meal.calories} kcal | 💪 ${meal.protein}g Protein</small></div></div></div>`;
+            });
+            planArea.innerHTML = workoutHtml + beautyHtml + mealsHtml;
+        } else {
+            planArea.innerHTML = `<div class="alert alert-warning text-center">⚠️ ${result.advice}</div>`;
+        }
+    } catch (e) {
+        planArea.innerHTML = `<div class="alert alert-danger text-center">❌ Connection Error.</div>`;
+    }
+}
+function openDietRecipe(index) {
+    let meal = currentPlan[index];
+    document.getElementById('modalTitle').innerText = meal.name;
+    document.getElementById('modalImg').src = meal.image || FALLBACK_IMAGE;
+    document.getElementById('modalCuisine').innerText = meal.cuisine;
+    document.getElementById('modalCal').innerText = meal.calories + " kcal";
+    document.getElementById('modalIng').innerText = meal.ingredients;
+    document.getElementById('modalSteps').innerText = meal.steps;
+    new bootstrap.Modal(document.getElementById('recipeModal')).show();
+}
+</script>
+{% endblock %}
+
+   
+            {% comment %} <label class="small text-muted fw-bold">🌍 Region</label>
+            <select id="region" class="form-select mb-3">
+                <option value="All">All Regions</option>
+                <option value="Indian">Indian</option>
+                <option value="North Indian">North Indian</option>
+                <option value="South Indian">South Indian</option>
+                <option value="Chinese">Chinese</option>
+                <option value="Italian">Italian</option>
+                <option value="Mexican">Mexican</option>
+            </select> {% endcomment %}
+            {% comment %} <label class="small fw-bold text-muted">🗣️ LANGUAGE</label>
+            <div class="input-box">
+                <span class="input-group-text">🌐</span>
+                <select id="lang" class="form-select">
+                    <option value="en" selected>English</option>
+                    <optgroup label="🇮🇳 Indian Languages">
+                        <option value="hi">Hindi (हिंदी)</option>
+                        <option value="bn">Bengali (বাংলা)</option>
+                        <option value="mr">Marathi (मराठी)</option>
+                        <option value="te">Telugu (తెలుగు)</option>
+                        <option value="ta">Tamil (தமிழ்)</option>
+                        <option value="gu">Gujarati (ગુજરાતી)</option>
+                        <option value="ur">Urdu (اردو)</option>
+                        <option value="kn">Kannada (ಕನ್ನಡ)</option>
+                        <option value="ml">Malayalam (മലയാളം)</option>
+                        <option value="pa">Punjabi (ਪੰਜਾਬੀ)</option>
+                        <option value="or">Odia (ଓଡ଼ିଆ)</option>
+                    </optgroup>
+                    <optgroup label="🌍 International">
+                        <option value="es">Spanish (Español)</option>
+                        <option value="fr">French (Français)</option>
+                        <option value="de">German (Deutsch)</option>
+                        <option value="it">Italian (Italiano)</option>
+                        <option value="pt">Portuguese (Português)</option>
+                        <option value="ru">Russian (Русский)</option>
+                        <option value="ja">Japanese (日本語)</option>
+                        <option value="zh-CN">Chinese (Simplified)</option>
+                        <option value="ar">Arabic (العربية)</option>
+                    </optgroup>
+                </select> {% endcomment %}

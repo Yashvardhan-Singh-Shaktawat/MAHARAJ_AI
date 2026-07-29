@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    /* ===== Page Background ===== */
+    body {
+        background-color: #f4f7f6;
+    }
+
+    /* ===== Wrapper & Card ===== */
+    .form-container-wrapper {
+        position: relative;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .glass-card-ancient {
+        background: rgba(250, 248, 245, 0.9);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.4);
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    /* ===== Ancient Plants ===== */
+    .plant-accent {
+        position: absolute;
+        z-index: 3;
+        pointer-events: none;
+        filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+    }
+
+    .plant-top-left {
+        top: -40px;
+        left: -30px;
+        width: 180px;
+        transform: rotate(-5deg);
+    }
+
+    /* ===== Alerts ===== */
+    .alert-custom {
+        border-radius: 10px;
+        border: none;
+    }
+    .alert-success { background: rgba(25, 135, 84, 0.2); color: #155724; }
+    .alert-danger { background: rgba(220, 53, 69, 0.2); color: #721c24; }
+</style>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+            <div class="form-container-wrapper animate__animated animate__fadeInUp">
+                
+                <img src="https://i.ibb.co/mVskCvDs/3c9a84a2-883f-4cd2-b121-cbd678b2368d-removebg-preview.png" 
+                     class="plant-accent plant-top-left" alt="Ancient Vines">
+
+                <div class="glass-card-ancient p-5">
+                    
+                    {% if messages %}
+                        {% for message in messages %}
+                            <div class="alert alert-custom {% if message.tags == 'contact_msg error' %}alert-danger{% else %}alert-success{% endif %} text-center mb-4">
+                                {{ message }}
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold" style="color: #198754;">Get in Touch</h2>
+                        <p class="text-muted">Have feedback? Let us know!</p>
+                    </div>
+
+                    <form method="POST">
+                        {% csrf_token %}
+                        
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Full Name</label>
+                                <input type="text" name="name" class="form-control p-3 rounded-3" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold">Email Address</label>
+                                <input type="email" name="youremail" class="form-control p-3 rounded-3" placeholder="name@example.com" required>
+                            </div>
+                            
+                            <div class="col-12">
+                                <label class="form-label small fw-bold">Subject</label>
+                                <select name="subject" class="form-select p-3 rounded-3">
+                                    <option value="General Inquiry">General Inquiry</option>
+                                    <option value="Report a Bug">Report a Bug</option>
+                                    <option value="Feature Request">Feature Request</option>
+                                </select>
+                            </div>
+                            
+                            <div class="col-12">
+                                <label class="form-label small fw-bold">Message</label>
+                                <textarea name="message" class="form-control p-3 rounded-3" rows="5" placeholder="How can we help?" required></textarea>
+                            </div>
+                            
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn btn-success w-100 py-3 rounded-pill fw-bold shadow-sm">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="text-center mt-5 pt-4 border-top">
+                        <p class="small text-muted mb-1">Or email us directly at</p>
+                        <h5 class="fw-bold text-success">hello@maharaj.ai</h5>
+                    </div>
+                </div> 
+            </div> 
+        </div>
+    </div>
+</div>
+{% endblock %}

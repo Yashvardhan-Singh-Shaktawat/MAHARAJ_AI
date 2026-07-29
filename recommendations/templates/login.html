@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    /* ===== Page Setup needed for absolute positioning ===== */
+    body, html {
+        height: 100%;
+        overflow-x: hidden; /* Prevent horizontal scrollbar due to moving elements */
+        position: relative;
+    }
+
+    /* ===== Floating Veggies Container ===== */
+    .floating-veggies {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none; /* Ensures clicks go through to the form */
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .veg {
+        position: absolute;
+        /* Default opacity and size, overridden by specific Nth-child rules below */
+        opacity: 0.6;
+        font-size: 3rem;
+        /* Smooth transition for JS interactions (left/top/rotate changes) */
+        transition: all 0.3s ease-out;
+        will-change: transform, left, top;
+        /* Apply the bobbing animation independently */
+        animation: bobbing 4s ease-in-out infinite alternate;
+    }
+
+    /* ===== Keyframes for the gentle vertical bobbing ===== */
+    @keyframes bobbing {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-20px); }
+    }
+
+    /* ===== Initial Positions and Variation ===== */
+    /* We vary sizes, initial positions, and animation delays for a natural look */
+    .veg:nth-child(1) { top: 10%; left: 5%; font-size: 3.5rem; animation-delay: 0s; }
+    .veg:nth-child(2) { top: 20%; right: 10%; font-size: 2.5rem; animation-delay: 1.5s; opacity: 0.4;}
+    .veg:nth-child(3) { bottom: 30%; left: 15%; font-size: 4rem; animation-delay: 0.5s; }
+    .veg:nth-child(4) { bottom: 10%; right: 5%; font-size: 3rem; animation-delay: 2s; }
+    .veg:nth-child(5) { top: 50%; left: 50%; font-size: 2rem; animation-delay: 1s; opacity: 0.3;}
+    .veg:nth-child(6) { top: 70%; left: 35%; font-size: 3.2rem; animation-delay: 3s; }
+    .veg:nth-child(7) { top: 15%; left: 60%; font-size: 2.2rem; animation-delay: 2.2s; opacity: 0.5;}
+    .veg:nth-child(8) { bottom: 40%; right: 30%; font-size: 3.8rem; animation-delay: 0.8s; }
+
+
+    /* ===== Login Card Styling (Glassmorphism) ===== */
+    .login-wrapper {
+        position: relative;
+        z-index: 2; /* Ensure form is above veggies */
+        min-height: 80vh; /* Ensure vertical centering looks right */
+        display: flex;
+        align-items: center;
+    }
+
+    /* Basic Glassmorphism fallback if you don't have it defined elsewhere */
+    .glass-card {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border-radius: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    }
+</style>
+
+<div class="floating-veggies" id="veg-container">
+    <span class="veg" data-speed="3">🥕</span>
+    <span class="veg" data-speed="-4">🍅</span>
+    <span class="veg" data-speed="2">🥦</span>
+    <span class="veg" data-speed="-3">🍆</span>
+    <span class="veg" data-speed="5">🌽</span>
+    <span class="veg" data-speed="-2">🫑</span>
+    <span class="veg" data-speed="4">🥔</span>
+    <span class="veg" data-speed="-5">🥬</span>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center login-wrapper">
+        <div class="col-md-5 col-lg-4">
+            <div class="glass-card p-4 p-md-5">
+                <h2 class="text-center fw-bold text-success mb-4">
+                    Welcome Back!
+                </h2>
+
+                <form method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+
+                    <button type="submit"
+                            class="btn btn-success w-100 rounded-pill py-2 mt-4 fw-bold">
+                        Login
+                    </button>
+                </form>
+
+                <p class="text-center mt-4 text-muted small">
+                    New around here? <a href="/signup/" class="text-success fw-bold text-decoration-none">Create Account</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const veggies = document.querySelectorAll(".veg");
+    const container = document.getElementById('veg-container');
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    // 1. Track Mouse Position efficiently
+    document.addEventListener("mousemove", function (e) {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+    });
+
+    // 2. Animation Loop for smoother performance than just mousemove event
+    function animateVeggies() {
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+
+        veggies.forEach((veg, index) => {
+            // Get specific speed for this vegetable
+            const speed = parseFloat(veg.getAttribute("data-speed"));
+
+            // Calculate movement based on distance from center
+            // We divide by larger numbers to make the movement subtle
+            const moveX = (mouseX - centerX) * speed / 100;
+            const moveY = (mouseY - centerY) * speed / 100;
+
+            // Add a subtle rotation effect based on horizontal mouse movement
+            const rotateDeg = (mouseX - centerX) * speed / 200;
+
+            // Apply changes to TOP and LEFT, leaving transform for CSS bobbing animation.
+            // Using percentages for responsive positioning relative to current position.
+            // Note: This is a simplified approach. For very complex physics, requestAnimationFrame and absolute positioning is better.
+            // But for this parallax effect, modifying style directly works well enough combined with CSS transitions.
+
+            // We need to get initial computed base positions so they don't just drift endlessly
+            const initialTop = parseInt(window.getComputedStyle(veg).top);
+            const initialLeft = parseInt(window.getComputedStyle(veg).left);
+
+            veg.style.left = `calc(${initialLeft}px + ${moveX}px)`;
+            veg.style.top = `calc(${initialTop}px + ${moveY}px)`;
+            // We also add rotation here
+            veg.style.rotate = `${rotateDeg}deg`;
+        });
+
+        requestAnimationFrame(animateVeggies);
+    }
+
+    // Start the animation loop
+    animateVeggies();
+});
+</script>
+
+{% endblock %}

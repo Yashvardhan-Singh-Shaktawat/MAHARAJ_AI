@@ -1,0 +1,501 @@
+Day,Goal,Workout_Type,Location,Exercises,Duration_Minutes,Intensity,Calories_Burned,Protein_g,Carbs_g,Fats_g,Total_Calories_Intake,Benefits
+Day 9,Weight Gain,HIIT,Home,Moderate HIIT,33,High,297,176,301,62,2688,Conditioning
+Day 13,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",32,High,352,129,169,56,1681,Rapid calorie burn
+Day 27,Weight Maintain,Yoga,Home,Vinyasa Yoga,54,Low,270,120,210,61,2170,Mobility
+Day 15,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",34,Medium,238,143,167,42,1864,Rapid calorie burn
+Day 19,Weight Maintain,Cardio,Gym,Jogging,68,Medium,544,138,200,51,2068,Cardio fitness
+Day 13,Weight Loss,Cardio,Home,Running / Cycling,60,High,540,126,178,60,1838,"Fat loss, heart health"
+Day 20,Weight Gain,Strength Training,Gym,Compound Lifts,51,High,408,180,338,69,2831,Muscle growth
+Day 10,Weight Maintain,Yoga,Home,Vinyasa Yoga,43,Medium,301,126,224,56,2184,Mobility
+Day 28,Weight Gain,Cardio,Home,Light Cycling,44,High,352,177,287,66,2404,Endurance
+Day 4,Weight Maintain,Cardio,Home,Jogging,74,Medium,444,113,229,50,2165,Cardio fitness
+Day 2,Weight Loss,Strength Training,Home,Circuit Training,55,Low,220,138,176,40,1839,Muscle tone
+Day 20,Weight Loss,Cardio,Gym,Running / Cycling,58,Medium,406,132,167,47,1662,"Fat loss, heart health"
+Day 9,Weight Maintain,Cardio,Home,Jogging,56,High,616,121,260,61,2029,Cardio fitness
+Day 13,Weight Loss,Yoga,Home,Power Yoga,53,Low,212,148,171,51,1666,Flexibility & metabolism
+Day 16,Weight Gain,HIIT,Home,Moderate HIIT,32,Low,160,154,329,61,2866,Conditioning
+Day 3,Weight Gain,Strength Training,Gym,Compound Lifts,56,Medium,336,179,304,76,2737,Muscle growth
+Day 23,Weight Maintain,HIIT,Gym,Mixed HIIT,36,Low,108,113,240,53,2123,Overall fitness
+Day 17,Weight Loss,Cardio,Home,Running / Cycling,69,Medium,345,127,159,52,1829,"Fat loss, heart health"
+Day 28,Weight Maintain,Yoga,Gym,Vinyasa Yoga,75,Low,375,138,245,51,2117,Mobility
+Day 10,Weight Loss,Yoga,Gym,Power Yoga,49,Low,147,138,149,43,1868,Flexibility & metabolism
+Day 3,Weight Maintain,Yoga,Home,Vinyasa Yoga,58,Low,174,112,207,51,2095,Mobility
+Day 1,Weight Gain,Cardio,Gym,Light Cycling,70,Low,350,175,305,79,2466,Endurance
+Day 20,Weight Gain,Strength Training,Home,Compound Lifts,74,Medium,592,155,331,78,2589,Muscle growth
+Day 28,Weight Loss,Yoga,Gym,Power Yoga,48,Low,240,139,142,42,1879,Flexibility & metabolism
+Day 20,Weight Maintain,Yoga,Gym,Vinyasa Yoga,35,Low,105,131,211,57,2022,Mobility
+Day 1,Weight Loss,Strength Training,Gym,Circuit Training,38,High,380,127,143,47,1893,Muscle tone
+Day 1,Weight Gain,Strength Training,Home,Compound Lifts,46,Medium,276,178,326,74,2700,Muscle growth
+Day 30,Weight Gain,Yoga,Home,Hatha Yoga,30,Low,150,179,285,66,2926,Recovery
+Day 2,Weight Loss,Yoga,Home,Power Yoga,56,Low,280,136,167,52,1799,Flexibility & metabolism
+Day 22,Weight Gain,Strength Training,Home,Compound Lifts,58,High,522,152,345,68,2464,Muscle growth
+Day 2,Weight Maintain,HIIT,Home,Mixed HIIT,69,High,759,124,258,53,2190,Overall fitness
+Day 30,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",55,Low,220,148,131,49,1632,Rapid calorie burn
+Day 11,Weight Gain,HIIT,Home,Moderate HIIT,57,Medium,456,176,345,60,2749,Conditioning
+Day 18,Weight Maintain,Yoga,Gym,Vinyasa Yoga,63,Low,252,137,236,56,2093,Mobility
+Day 29,Weight Gain,Yoga,Gym,Hatha Yoga,49,Low,196,157,295,67,2541,Recovery
+Day 28,Weight Maintain,Cardio,Gym,Jogging,57,Low,285,120,211,51,2186,Cardio fitness
+Day 10,Weight Maintain,Yoga,Home,Vinyasa Yoga,52,Medium,260,120,255,55,2043,Mobility
+Day 13,Weight Loss,Cardio,Home,Running / Cycling,30,High,360,141,134,49,1749,"Fat loss, heart health"
+Day 3,Weight Gain,HIIT,Home,Moderate HIIT,72,Low,216,174,330,67,2618,Conditioning
+Day 15,Weight Gain,Yoga,Gym,Hatha Yoga,61,Medium,366,153,343,67,2451,Recovery
+Day 24,Weight Gain,Yoga,Gym,Hatha Yoga,58,High,696,151,330,74,2491,Recovery
+Day 22,Weight Maintain,Cardio,Home,Jogging,60,High,480,130,228,50,2171,Cardio fitness
+Day 24,Weight Loss,Yoga,Gym,Power Yoga,39,Medium,195,143,154,52,1708,Flexibility & metabolism
+Day 17,Weight Maintain,HIIT,Home,Mixed HIIT,37,Low,185,116,237,61,2017,Overall fitness
+Day 29,Weight Loss,Yoga,Home,Power Yoga,70,High,560,141,145,58,1792,Flexibility & metabolism
+Day 14,Weight Loss,Cardio,Home,Running / Cycling,38,High,418,124,165,44,1808,"Fat loss, heart health"
+Day 1,Weight Maintain,HIIT,Gym,Mixed HIIT,50,High,450,136,248,55,2118,Overall fitness
+Day 7,Weight Maintain,Strength Training,Home,Split Workout,67,Medium,402,117,203,56,2199,Strength balance
+Day 29,Weight Maintain,HIIT,Home,Mixed HIIT,64,Low,320,132,245,63,2014,Overall fitness
+Day 6,Weight Loss,Cardio,Home,Running / Cycling,52,Low,156,147,134,44,1608,"Fat loss, heart health"
+Day 10,Weight Gain,HIIT,Gym,Moderate HIIT,56,High,672,160,311,74,2500,Conditioning
+Day 26,Weight Maintain,Yoga,Gym,Vinyasa Yoga,63,Low,189,123,232,57,2080,Mobility
+Day 23,Weight Maintain,Strength Training,Gym,Split Workout,73,High,657,113,241,56,2040,Strength balance
+Day 2,Weight Loss,Yoga,Home,Power Yoga,48,Low,192,146,153,48,1894,Flexibility & metabolism
+Day 29,Weight Maintain,Cardio,Home,Jogging,51,Medium,357,137,241,54,2037,Cardio fitness
+Day 25,Weight Gain,Yoga,Home,Hatha Yoga,38,High,304,141,319,73,2967,Recovery
+Day 18,Weight Loss,Cardio,Home,Running / Cycling,51,Medium,306,132,142,54,1830,"Fat loss, heart health"
+Day 15,Weight Maintain,Strength Training,Home,Split Workout,69,Medium,414,123,247,54,2014,Strength balance
+Day 2,Weight Maintain,Strength Training,Gym,Split Workout,59,Medium,295,115,205,55,2067,Strength balance
+Day 27,Weight Loss,HIIT,Home,"Burpees, Jump Squats",67,Medium,402,148,178,46,1761,Rapid calorie burn
+Day 12,Weight Gain,Cardio,Home,Light Cycling,64,High,512,143,328,73,2656,Endurance
+Day 23,Weight Gain,Cardio,Gym,Light Cycling,66,High,660,179,335,74,2768,Endurance
+Day 13,Weight Loss,HIIT,Home,"Burpees, Jump Squats",37,High,370,147,162,46,1865,Rapid calorie burn
+Day 30,Weight Maintain,Yoga,Home,Vinyasa Yoga,40,Low,160,113,260,52,2009,Mobility
+Day 12,Weight Loss,Yoga,Home,Power Yoga,36,Low,108,143,131,41,1628,Flexibility & metabolism
+Day 22,Weight Maintain,Yoga,Home,Vinyasa Yoga,43,Medium,215,134,200,65,2008,Mobility
+Day 17,Weight Maintain,HIIT,Home,Mixed HIIT,32,Low,128,129,214,62,2089,Overall fitness
+Day 2,Weight Maintain,Yoga,Gym,Vinyasa Yoga,57,High,456,113,228,64,2196,Mobility
+Day 16,Weight Gain,HIIT,Home,Moderate HIIT,33,Low,132,168,340,75,2482,Conditioning
+Day 23,Weight Loss,Cardio,Home,Running / Cycling,59,High,590,132,138,41,1618,"Fat loss, heart health"
+Day 14,Weight Loss,Cardio,Gym,Running / Cycling,49,High,588,126,153,42,1622,"Fat loss, heart health"
+Day 25,Weight Loss,Strength Training,Home,Circuit Training,62,High,496,129,132,47,1669,Muscle tone
+Day 26,Weight Gain,Strength Training,Home,Compound Lifts,35,Medium,245,145,325,69,2635,Muscle growth
+Day 5,Weight Gain,Yoga,Gym,Hatha Yoga,73,Low,219,153,290,68,2891,Recovery
+Day 12,Weight Loss,Strength Training,Gym,Circuit Training,58,Low,232,130,149,50,1886,Muscle tone
+Day 12,Weight Gain,HIIT,Home,Moderate HIIT,68,Medium,340,147,327,64,2716,Conditioning
+Day 11,Weight Loss,Strength Training,Home,Circuit Training,34,High,306,135,137,53,1785,Muscle tone
+Day 10,Weight Gain,Cardio,Home,Light Cycling,70,Medium,420,155,293,61,2568,Endurance
+Day 5,Weight Gain,Strength Training,Home,Compound Lifts,42,Medium,252,172,295,79,2879,Muscle growth
+Day 14,Weight Loss,Yoga,Gym,Power Yoga,65,High,650,138,161,49,1707,Flexibility & metabolism
+Day 3,Weight Gain,Yoga,Gym,Hatha Yoga,65,High,780,146,312,69,2578,Recovery
+Day 6,Weight Loss,Strength Training,Gym,Circuit Training,69,Medium,345,140,160,46,1775,Muscle tone
+Day 15,Weight Loss,Strength Training,Gym,Circuit Training,30,High,270,120,153,41,1683,Muscle tone
+Day 30,Weight Loss,Yoga,Home,Power Yoga,64,High,704,141,130,43,1629,Flexibility & metabolism
+Day 1,Weight Loss,Cardio,Gym,Running / Cycling,38,High,380,136,145,40,1753,"Fat loss, heart health"
+Day 2,Weight Loss,Strength Training,Gym,Circuit Training,46,Low,184,124,137,59,1896,Muscle tone
+Day 19,Weight Maintain,Yoga,Home,Vinyasa Yoga,49,High,490,139,205,62,2184,Mobility
+Day 4,Weight Loss,Cardio,Home,Running / Cycling,54,Medium,270,126,149,53,1850,"Fat loss, heart health"
+Day 30,Weight Gain,HIIT,Home,Moderate HIIT,66,Medium,396,154,305,80,2870,Conditioning
+Day 16,Weight Loss,Yoga,Gym,Power Yoga,75,High,600,125,143,41,1811,Flexibility & metabolism
+Day 15,Weight Loss,Cardio,Gym,Running / Cycling,58,Low,290,129,150,45,1617,"Fat loss, heart health"
+Day 26,Weight Loss,Yoga,Gym,Power Yoga,73,Medium,365,149,168,42,1615,Flexibility & metabolism
+Day 17,Weight Gain,Yoga,Home,Hatha Yoga,70,High,560,144,358,60,2561,Recovery
+Day 23,Weight Loss,Strength Training,Home,Circuit Training,39,High,312,131,172,40,1810,Muscle tone
+Day 3,Weight Maintain,Cardio,Home,Jogging,43,Medium,344,130,259,63,2092,Cardio fitness
+Day 22,Weight Loss,Cardio,Gym,Running / Cycling,36,High,360,138,151,53,1656,"Fat loss, heart health"
+Day 12,Weight Maintain,Yoga,Gym,Vinyasa Yoga,47,High,470,123,218,63,2087,Mobility
+Day 4,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",52,Medium,312,121,159,49,1656,Rapid calorie burn
+Day 17,Weight Gain,HIIT,Home,Moderate HIIT,56,Medium,280,145,317,60,2507,Conditioning
+Day 15,Weight Maintain,HIIT,Gym,Mixed HIIT,68,Medium,408,125,218,54,2020,Overall fitness
+Day 3,Weight Loss,Strength Training,Home,Circuit Training,33,Medium,198,133,146,50,1602,Muscle tone
+Day 22,Weight Gain,Strength Training,Gym,Compound Lifts,41,High,410,175,338,68,2961,Muscle growth
+Day 7,Weight Loss,Strength Training,Gym,Circuit Training,75,Low,375,131,161,60,1778,Muscle tone
+Day 24,Weight Maintain,Strength Training,Gym,Split Workout,75,Low,300,138,204,58,2049,Strength balance
+Day 25,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",32,Low,96,148,140,47,1827,Rapid calorie burn
+Day 8,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",31,Medium,248,140,156,45,1870,Rapid calorie burn
+Day 16,Weight Loss,Strength Training,Home,Circuit Training,57,Medium,399,135,165,44,1622,Muscle tone
+Day 8,Weight Maintain,HIIT,Home,Mixed HIIT,60,Medium,480,110,228,56,2033,Overall fitness
+Day 1,Weight Gain,Cardio,Home,Light Cycling,61,Medium,488,177,346,63,2542,Endurance
+Day 11,Weight Gain,Cardio,Gym,Light Cycling,71,Low,355,149,305,61,2668,Endurance
+Day 30,Weight Maintain,HIIT,Home,Mixed HIIT,45,Low,180,139,212,61,2107,Overall fitness
+Day 6,Weight Maintain,Cardio,Gym,Jogging,44,Medium,264,132,231,54,2035,Cardio fitness
+Day 16,Weight Maintain,Strength Training,Home,Split Workout,69,High,759,131,223,53,2195,Strength balance
+Day 29,Weight Gain,Yoga,Home,Hatha Yoga,64,Medium,320,155,316,80,2462,Recovery
+Day 13,Weight Gain,Cardio,Home,Light Cycling,30,High,270,150,334,64,2430,Endurance
+Day 21,Weight Gain,Strength Training,Gym,Compound Lifts,64,Low,256,151,326,79,2870,Muscle growth
+Day 27,Weight Maintain,Cardio,Gym,Jogging,74,Medium,592,113,246,64,2023,Cardio fitness
+Day 7,Weight Maintain,Strength Training,Home,Split Workout,71,Medium,568,110,238,61,2117,Strength balance
+Day 24,Weight Gain,Strength Training,Gym,Compound Lifts,48,High,480,158,288,63,2797,Muscle growth
+Day 10,Weight Gain,Cardio,Gym,Light Cycling,72,Low,288,148,303,65,2592,Endurance
+Day 30,Weight Maintain,Cardio,Gym,Jogging,70,High,630,135,205,54,2123,Cardio fitness
+Day 22,Weight Maintain,Strength Training,Home,Split Workout,42,High,336,121,218,50,2115,Strength balance
+Day 5,Weight Maintain,Cardio,Home,Jogging,61,High,671,128,208,50,2155,Cardio fitness
+Day 12,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",55,Low,165,137,140,58,1835,Rapid calorie burn
+Day 4,Weight Maintain,HIIT,Gym,Mixed HIIT,30,Medium,180,126,206,63,2111,Overall fitness
+Day 24,Weight Gain,Cardio,Gym,Light Cycling,50,High,450,146,286,67,2686,Endurance
+Day 28,Weight Gain,HIIT,Home,Moderate HIIT,46,Medium,276,179,341,76,2940,Conditioning
+Day 30,Weight Gain,Cardio,Gym,Light Cycling,74,Medium,592,160,285,78,2918,Endurance
+Day 26,Weight Loss,HIIT,Home,"Burpees, Jump Squats",74,Low,296,132,166,59,1728,Rapid calorie burn
+Day 12,Weight Gain,HIIT,Home,Moderate HIIT,45,High,540,157,307,67,2942,Conditioning
+Day 21,Weight Loss,Yoga,Home,Power Yoga,50,Medium,300,124,177,50,1703,Flexibility & metabolism
+Day 4,Weight Maintain,Yoga,Gym,Vinyasa Yoga,52,Medium,260,135,247,59,2015,Mobility
+Day 5,Weight Gain,HIIT,Gym,Moderate HIIT,37,High,296,142,351,71,2926,Conditioning
+Day 29,Weight Loss,Yoga,Gym,Power Yoga,58,Low,290,122,175,53,1873,Flexibility & metabolism
+Day 6,Weight Gain,Strength Training,Home,Compound Lifts,47,High,564,180,347,74,2916,Muscle growth
+Day 7,Weight Maintain,Yoga,Home,Vinyasa Yoga,31,High,372,116,259,50,2065,Mobility
+Day 25,Weight Maintain,Yoga,Gym,Vinyasa Yoga,62,Medium,310,124,206,61,2151,Mobility
+Day 20,Weight Maintain,Cardio,Home,Jogging,56,Medium,280,138,241,63,2136,Cardio fitness
+Day 6,Weight Gain,HIIT,Gym,Moderate HIIT,52,Medium,312,142,317,73,2796,Conditioning
+Day 20,Weight Gain,Cardio,Gym,Light Cycling,68,Low,340,153,352,76,2680,Endurance
+Day 12,Weight Maintain,Strength Training,Gym,Split Workout,40,High,480,127,206,52,2192,Strength balance
+Day 4,Weight Loss,Yoga,Home,Power Yoga,49,Medium,294,127,144,40,1648,Flexibility & metabolism
+Day 2,Weight Maintain,Cardio,Gym,Jogging,55,Low,275,130,247,65,2182,Cardio fitness
+Day 10,Weight Loss,Yoga,Home,Power Yoga,31,Medium,217,141,141,50,1781,Flexibility & metabolism
+Day 7,Weight Gain,Cardio,Gym,Light Cycling,38,Low,114,157,304,80,2966,Endurance
+Day 16,Weight Maintain,HIIT,Home,Mixed HIIT,52,Low,208,137,251,51,2062,Overall fitness
+Day 14,Weight Maintain,Yoga,Home,Vinyasa Yoga,65,Medium,455,121,243,64,2089,Mobility
+Day 29,Weight Maintain,Cardio,Gym,Jogging,32,Low,96,114,203,61,2024,Cardio fitness
+Day 24,Weight Maintain,Cardio,Home,Jogging,74,High,888,138,240,51,2187,Cardio fitness
+Day 5,Weight Loss,Cardio,Gym,Running / Cycling,59,Medium,413,137,153,51,1744,"Fat loss, heart health"
+Day 17,Weight Gain,Cardio,Gym,Light Cycling,51,High,612,143,336,72,2547,Endurance
+Day 8,Weight Loss,Strength Training,Gym,Circuit Training,36,Low,180,136,146,54,1673,Muscle tone
+Day 14,Weight Maintain,Strength Training,Home,Split Workout,59,Medium,295,138,213,62,2009,Strength balance
+Day 12,Weight Gain,Cardio,Home,Light Cycling,38,Low,152,157,290,70,2605,Endurance
+Day 13,Weight Maintain,Strength Training,Gym,Split Workout,56,Low,280,119,230,56,2130,Strength balance
+Day 26,Weight Gain,Strength Training,Gym,Compound Lifts,32,High,320,176,280,80,2657,Muscle growth
+Day 26,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",49,Low,196,131,166,55,1644,Rapid calorie burn
+Day 22,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",52,Low,260,148,169,41,1777,Rapid calorie burn
+Day 16,Weight Gain,Yoga,Gym,Hatha Yoga,48,Medium,240,180,333,62,2759,Recovery
+Day 1,Weight Maintain,Yoga,Gym,Vinyasa Yoga,57,High,570,127,211,62,2156,Mobility
+Day 6,Weight Loss,Strength Training,Gym,Circuit Training,57,High,684,139,153,52,1853,Muscle tone
+Day 19,Weight Loss,HIIT,Home,"Burpees, Jump Squats",61,High,549,127,174,44,1738,Rapid calorie burn
+Day 4,Weight Maintain,HIIT,Home,Mixed HIIT,32,Low,160,129,226,52,2127,Overall fitness
+Day 19,Weight Maintain,Cardio,Home,Jogging,54,Medium,378,124,222,54,2004,Cardio fitness
+Day 2,Weight Maintain,HIIT,Home,Mixed HIIT,71,Low,213,138,242,50,2015,Overall fitness
+Day 10,Weight Loss,Yoga,Home,Power Yoga,50,Medium,350,120,165,42,1649,Flexibility & metabolism
+Day 26,Weight Gain,Cardio,Home,Light Cycling,57,High,684,160,320,71,2925,Endurance
+Day 5,Weight Loss,Strength Training,Gym,Circuit Training,47,Low,235,124,150,47,1671,Muscle tone
+Day 3,Weight Loss,Strength Training,Gym,Circuit Training,48,Medium,384,126,176,55,1873,Muscle tone
+Day 17,Weight Maintain,Yoga,Home,Vinyasa Yoga,42,Medium,210,115,244,63,2087,Mobility
+Day 12,Weight Loss,HIIT,Home,"Burpees, Jump Squats",56,High,504,141,152,42,1790,Rapid calorie burn
+Day 9,Weight Gain,Cardio,Gym,Light Cycling,73,Low,365,148,329,65,2886,Endurance
+Day 21,Weight Maintain,Cardio,Gym,Jogging,60,Medium,300,134,226,65,2129,Cardio fitness
+Day 26,Weight Maintain,Cardio,Gym,Jogging,58,High,522,136,246,54,2193,Cardio fitness
+Day 14,Weight Maintain,HIIT,Gym,Mixed HIIT,37,High,444,130,217,54,2106,Overall fitness
+Day 16,Weight Loss,Cardio,Home,Running / Cycling,69,High,621,122,167,54,1789,"Fat loss, heart health"
+Day 1,Weight Gain,Yoga,Home,Hatha Yoga,69,High,621,156,299,75,2827,Recovery
+Day 19,Weight Gain,Cardio,Home,Light Cycling,41,Medium,246,156,337,61,2715,Endurance
+Day 4,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",34,High,374,130,176,57,1671,Rapid calorie burn
+Day 15,Weight Gain,Strength Training,Home,Compound Lifts,58,Low,290,141,303,73,2927,Muscle growth
+Day 18,Weight Gain,Cardio,Home,Light Cycling,32,Medium,256,159,331,70,2720,Endurance
+Day 21,Weight Maintain,Strength Training,Home,Split Workout,68,Low,272,124,247,52,2010,Strength balance
+Day 1,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",69,High,552,135,154,53,1724,Rapid calorie burn
+Day 20,Weight Loss,Cardio,Home,Running / Cycling,74,High,888,136,174,51,1754,"Fat loss, heart health"
+Day 8,Weight Loss,Cardio,Gym,Running / Cycling,38,Medium,304,143,179,46,1610,"Fat loss, heart health"
+Day 9,Weight Gain,Cardio,Gym,Light Cycling,67,Low,268,179,281,65,2631,Endurance
+Day 21,Weight Gain,Yoga,Home,Hatha Yoga,58,Medium,406,171,309,66,2728,Recovery
+Day 3,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",64,Medium,448,138,134,49,1840,Rapid calorie burn
+Day 9,Weight Loss,Strength Training,Home,Circuit Training,70,Medium,490,120,165,52,1740,Muscle tone
+Day 6,Weight Maintain,Yoga,Home,Vinyasa Yoga,36,Medium,180,114,207,55,2175,Mobility
+Day 1,Weight Loss,Cardio,Home,Running / Cycling,61,High,549,129,161,55,1650,"Fat loss, heart health"
+Day 9,Weight Maintain,Strength Training,Gym,Split Workout,72,High,792,133,232,58,2107,Strength balance
+Day 8,Weight Gain,Yoga,Gym,Hatha Yoga,70,High,560,150,292,62,2815,Recovery
+Day 11,Weight Loss,Cardio,Home,Running / Cycling,65,Medium,455,123,177,59,1716,"Fat loss, heart health"
+Day 27,Weight Maintain,HIIT,Home,Mixed HIIT,64,Medium,448,134,247,61,2164,Overall fitness
+Day 19,Weight Loss,Cardio,Home,Running / Cycling,30,High,360,121,132,58,1847,"Fat loss, heart health"
+Day 29,Weight Gain,Cardio,Gym,Light Cycling,71,High,568,171,297,63,2594,Endurance
+Day 19,Weight Gain,Strength Training,Home,Compound Lifts,68,High,816,146,356,66,2514,Muscle growth
+Day 5,Weight Loss,Strength Training,Home,Circuit Training,61,Low,305,137,143,59,1699,Muscle tone
+Day 29,Weight Maintain,HIIT,Gym,Mixed HIIT,68,Low,272,137,257,58,2051,Overall fitness
+Day 16,Weight Maintain,Strength Training,Home,Split Workout,50,High,550,139,245,52,2098,Strength balance
+Day 5,Weight Loss,Strength Training,Gym,Circuit Training,31,High,279,143,140,41,1611,Muscle tone
+Day 2,Weight Loss,HIIT,Home,"Burpees, Jump Squats",56,High,504,147,154,42,1736,Rapid calorie burn
+Day 1,Weight Gain,Strength Training,Home,Compound Lifts,48,High,528,148,356,62,2734,Muscle growth
+Day 24,Weight Maintain,HIIT,Home,Mixed HIIT,34,Low,102,140,244,60,2134,Overall fitness
+Day 19,Weight Loss,HIIT,Home,"Burpees, Jump Squats",53,Low,265,147,166,53,1859,Rapid calorie burn
+Day 7,Weight Loss,Cardio,Gym,Running / Cycling,45,Low,135,122,136,49,1752,"Fat loss, heart health"
+Day 27,Weight Loss,Yoga,Home,Power Yoga,74,High,592,131,175,43,1619,Flexibility & metabolism
+Day 26,Weight Maintain,Yoga,Gym,Vinyasa Yoga,74,Low,296,129,224,55,2033,Mobility
+Day 20,Weight Loss,Yoga,Gym,Power Yoga,39,Low,156,137,133,59,1882,Flexibility & metabolism
+Day 20,Weight Loss,Strength Training,Home,Circuit Training,40,High,360,137,145,49,1610,Muscle tone
+Day 18,Weight Gain,Strength Training,Gym,Compound Lifts,44,High,484,171,341,74,2578,Muscle growth
+Day 4,Weight Gain,Cardio,Home,Light Cycling,30,Medium,210,164,314,77,2666,Endurance
+Day 30,Weight Loss,Cardio,Gym,Running / Cycling,34,Low,136,128,180,57,1784,"Fat loss, heart health"
+Day 8,Weight Gain,Strength Training,Gym,Compound Lifts,73,High,657,170,322,63,2935,Muscle growth
+Day 7,Weight Gain,Yoga,Gym,Hatha Yoga,41,High,328,146,299,80,2858,Recovery
+Day 25,Weight Loss,Cardio,Gym,Running / Cycling,35,Low,105,124,159,60,1708,"Fat loss, heart health"
+Day 3,Weight Gain,Cardio,Gym,Light Cycling,32,Low,160,157,280,60,2837,Endurance
+Day 9,Weight Maintain,Yoga,Gym,Vinyasa Yoga,65,High,520,120,244,64,2024,Mobility
+Day 11,Weight Maintain,Strength Training,Home,Split Workout,72,Low,360,131,208,61,2093,Strength balance
+Day 10,Weight Gain,Strength Training,Gym,Compound Lifts,68,Medium,544,151,318,65,2527,Muscle growth
+Day 17,Weight Gain,HIIT,Gym,Moderate HIIT,64,High,640,146,346,77,2403,Conditioning
+Day 8,Weight Maintain,Strength Training,Gym,Split Workout,31,High,248,134,219,63,2011,Strength balance
+Day 28,Weight Maintain,Strength Training,Gym,Split Workout,60,Low,240,117,227,53,2168,Strength balance
+Day 24,Weight Loss,Cardio,Home,Running / Cycling,75,High,825,131,131,50,1736,"Fat loss, heart health"
+Day 8,Weight Maintain,Yoga,Home,Vinyasa Yoga,53,Low,212,137,207,52,2071,Mobility
+Day 12,Weight Loss,Cardio,Home,Running / Cycling,52,High,468,131,137,42,1627,"Fat loss, heart health"
+Day 20,Weight Gain,HIIT,Gym,Moderate HIIT,36,Low,180,156,281,68,2903,Conditioning
+Day 8,Weight Gain,HIIT,Home,Moderate HIIT,40,Medium,240,155,319,68,2993,Conditioning
+Day 29,Weight Loss,Yoga,Home,Power Yoga,63,High,504,127,149,47,1750,Flexibility & metabolism
+Day 2,Weight Gain,Strength Training,Home,Compound Lifts,33,High,264,162,315,68,2450,Muscle growth
+Day 27,Weight Maintain,HIIT,Gym,Mixed HIIT,30,Low,90,130,206,51,2019,Overall fitness
+Day 10,Weight Maintain,HIIT,Home,Mixed HIIT,71,High,568,124,208,51,2062,Overall fitness
+Day 10,Weight Maintain,Cardio,Home,Jogging,72,Medium,576,135,218,63,2124,Cardio fitness
+Day 3,Weight Gain,Strength Training,Gym,Compound Lifts,72,Medium,504,152,345,65,2776,Muscle growth
+Day 14,Weight Loss,Yoga,Home,Power Yoga,58,Medium,406,124,162,55,1649,Flexibility & metabolism
+Day 19,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",42,Low,126,124,140,49,1692,Rapid calorie burn
+Day 24,Weight Gain,Yoga,Home,Hatha Yoga,59,Low,236,149,355,65,2460,Recovery
+Day 25,Weight Loss,Strength Training,Gym,Circuit Training,47,Low,141,143,178,59,1730,Muscle tone
+Day 16,Weight Loss,Yoga,Home,Power Yoga,32,Medium,160,134,130,56,1675,Flexibility & metabolism
+Day 26,Weight Loss,Cardio,Home,Running / Cycling,50,High,400,146,177,42,1890,"Fat loss, heart health"
+Day 14,Weight Gain,Cardio,Gym,Light Cycling,47,Low,188,151,294,65,2670,Endurance
+Day 13,Weight Maintain,Yoga,Home,Vinyasa Yoga,43,Low,129,119,224,54,2016,Mobility
+Day 15,Weight Maintain,Cardio,Home,Jogging,44,High,352,138,236,57,2151,Cardio fitness
+Day 6,Weight Maintain,Strength Training,Gym,Split Workout,50,High,400,117,208,61,2153,Strength balance
+Day 14,Weight Loss,Yoga,Gym,Power Yoga,53,High,477,124,140,40,1857,Flexibility & metabolism
+Day 18,Weight Loss,Strength Training,Home,Circuit Training,72,Low,360,132,166,56,1787,Muscle tone
+Day 28,Weight Loss,Yoga,Home,Power Yoga,64,Low,192,135,132,49,1764,Flexibility & metabolism
+Day 28,Weight Loss,HIIT,Home,"Burpees, Jump Squats",32,High,384,127,130,45,1723,Rapid calorie burn
+Day 4,Weight Gain,HIIT,Home,Moderate HIIT,59,High,708,169,322,65,2698,Conditioning
+Day 25,Weight Gain,Cardio,Home,Light Cycling,65,High,715,160,315,66,2916,Endurance
+Day 13,Weight Loss,Strength Training,Home,Circuit Training,63,Medium,441,127,145,57,1819,Muscle tone
+Day 27,Weight Gain,Yoga,Gym,Hatha Yoga,39,High,429,148,342,74,2594,Recovery
+Day 13,Weight Gain,HIIT,Gym,Moderate HIIT,42,Medium,294,157,342,67,2835,Conditioning
+Day 27,Weight Maintain,Cardio,Gym,Jogging,39,High,390,126,238,50,2190,Cardio fitness
+Day 20,Weight Loss,Strength Training,Gym,Circuit Training,61,High,671,132,137,49,1751,Muscle tone
+Day 22,Weight Gain,Strength Training,Home,Compound Lifts,61,Medium,427,166,294,69,2429,Muscle growth
+Day 29,Weight Gain,Cardio,Gym,Light Cycling,32,Low,160,165,310,67,2913,Endurance
+Day 6,Weight Maintain,HIIT,Gym,Mixed HIIT,69,Low,345,136,222,65,2163,Overall fitness
+Day 14,Weight Maintain,Cardio,Home,Jogging,47,High,564,134,222,65,2081,Cardio fitness
+Day 11,Weight Maintain,Cardio,Home,Jogging,45,Medium,360,113,206,59,2185,Cardio fitness
+Day 16,Weight Gain,Yoga,Home,Hatha Yoga,41,High,328,164,285,61,2802,Recovery
+Day 1,Weight Maintain,Strength Training,Home,Split Workout,35,High,420,138,234,56,2049,Strength balance
+Day 11,Weight Maintain,HIIT,Gym,Mixed HIIT,58,High,580,119,234,55,2178,Overall fitness
+Day 21,Weight Gain,Cardio,Gym,Light Cycling,59,High,649,152,296,78,2871,Endurance
+Day 7,Weight Loss,Cardio,Gym,Running / Cycling,35,Low,140,144,176,59,1650,"Fat loss, heart health"
+Day 24,Weight Loss,Strength Training,Home,Circuit Training,60,High,720,122,175,43,1620,Muscle tone
+Day 13,Weight Gain,Cardio,Home,Light Cycling,32,Low,96,165,334,70,2645,Endurance
+Day 26,Weight Maintain,Strength Training,Home,Split Workout,45,High,495,125,220,53,2091,Strength balance
+Day 10,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",32,High,320,128,139,50,1737,Rapid calorie burn
+Day 19,Weight Loss,Cardio,Gym,Running / Cycling,68,High,816,146,162,53,1766,"Fat loss, heart health"
+Day 19,Weight Gain,Strength Training,Gym,Compound Lifts,30,Low,120,179,346,75,2797,Muscle growth
+Day 30,Weight Gain,Strength Training,Gym,Compound Lifts,67,High,603,161,301,60,2649,Muscle growth
+Day 14,Weight Gain,Cardio,Gym,Light Cycling,52,Low,260,155,333,71,2535,Endurance
+Day 7,Weight Maintain,Cardio,Gym,Jogging,34,Low,136,128,256,61,2075,Cardio fitness
+Day 26,Weight Loss,Yoga,Home,Power Yoga,47,Low,188,132,180,52,1763,Flexibility & metabolism
+Day 15,Weight Gain,Yoga,Gym,Hatha Yoga,75,High,900,176,324,60,2853,Recovery
+Day 11,Weight Maintain,Yoga,Gym,Vinyasa Yoga,53,Medium,318,117,223,59,2074,Mobility
+Day 7,Weight Loss,Strength Training,Home,Circuit Training,67,Medium,536,143,160,53,1694,Muscle tone
+Day 28,Weight Gain,Strength Training,Home,Compound Lifts,37,Medium,259,146,321,79,2643,Muscle growth
+Day 4,Weight Gain,Yoga,Gym,Hatha Yoga,58,Medium,348,156,313,70,2663,Recovery
+Day 18,Weight Gain,Strength Training,Home,Compound Lifts,48,Low,192,166,322,78,2747,Muscle growth
+Day 25,Weight Loss,Yoga,Gym,Power Yoga,74,High,666,125,176,48,1769,Flexibility & metabolism
+Day 13,Weight Maintain,HIIT,Home,Mixed HIIT,43,High,430,124,230,53,2070,Overall fitness
+Day 25,Weight Loss,Strength Training,Home,Circuit Training,67,High,536,133,176,49,1677,Muscle tone
+Day 15,Weight Maintain,HIIT,Gym,Mixed HIIT,60,Low,180,113,211,63,2156,Overall fitness
+Day 21,Weight Maintain,Cardio,Gym,Jogging,46,Low,230,124,245,54,2191,Cardio fitness
+Day 21,Weight Loss,HIIT,Home,"Burpees, Jump Squats",57,Low,171,131,173,50,1673,Rapid calorie burn
+Day 8,Weight Maintain,HIIT,Gym,Mixed HIIT,36,Medium,216,110,235,63,2049,Overall fitness
+Day 17,Weight Loss,Yoga,Home,Power Yoga,63,Low,252,128,146,57,1886,Flexibility & metabolism
+Day 24,Weight Loss,Strength Training,Gym,Circuit Training,45,Medium,225,127,152,46,1724,Muscle tone
+Day 10,Weight Gain,Yoga,Home,Hatha Yoga,70,Medium,420,160,304,72,2503,Recovery
+Day 21,Weight Gain,Yoga,Home,Hatha Yoga,31,Medium,155,151,281,79,2903,Recovery
+Day 17,Weight Loss,Cardio,Gym,Running / Cycling,30,Low,90,128,136,56,1881,"Fat loss, heart health"
+Day 13,Weight Maintain,Yoga,Gym,Vinyasa Yoga,59,Low,177,137,230,61,2181,Mobility
+Day 19,Weight Gain,Cardio,Home,Light Cycling,48,High,384,151,325,79,2549,Endurance
+Day 5,Weight Maintain,Yoga,Gym,Vinyasa Yoga,56,Low,168,111,223,50,2110,Mobility
+Day 21,Weight Loss,HIIT,Home,"Burpees, Jump Squats",36,High,360,120,148,53,1637,Rapid calorie burn
+Day 1,Weight Gain,Cardio,Home,Light Cycling,68,Low,272,171,348,71,2486,Endurance
+Day 4,Weight Gain,Yoga,Gym,Hatha Yoga,42,High,504,168,343,80,2637,Recovery
+Day 12,Weight Gain,Strength Training,Gym,Compound Lifts,53,High,424,147,339,68,2701,Muscle growth
+Day 27,Weight Gain,HIIT,Home,Moderate HIIT,35,Low,140,149,280,66,2671,Conditioning
+Day 22,Weight Maintain,HIIT,Gym,Mixed HIIT,75,High,600,130,240,59,2102,Overall fitness
+Day 18,Weight Maintain,HIIT,Home,Mixed HIIT,59,Low,295,136,204,56,2137,Overall fitness
+Day 26,Weight Gain,Yoga,Gym,Hatha Yoga,72,High,720,144,337,70,2430,Recovery
+Day 13,Weight Maintain,Yoga,Home,Vinyasa Yoga,51,Medium,408,133,207,52,2128,Mobility
+Day 23,Weight Gain,Cardio,Home,Light Cycling,73,Low,219,176,334,70,2865,Endurance
+Day 21,Weight Loss,Cardio,Home,Running / Cycling,32,Low,128,145,172,49,1888,"Fat loss, heart health"
+Day 26,Weight Gain,Yoga,Home,Hatha Yoga,53,High,477,156,294,72,2573,Recovery
+Day 8,Weight Gain,HIIT,Home,Moderate HIIT,39,Low,117,143,357,65,2428,Conditioning
+Day 17,Weight Maintain,Yoga,Home,Vinyasa Yoga,67,Low,201,138,235,62,2103,Mobility
+Day 7,Weight Gain,Yoga,Home,Hatha Yoga,68,Low,340,167,309,74,2955,Recovery
+Day 22,Weight Loss,Yoga,Home,Power Yoga,53,Low,212,145,145,41,1792,Flexibility & metabolism
+Day 25,Weight Maintain,Strength Training,Home,Split Workout,67,Low,201,126,250,63,2168,Strength balance
+Day 24,Weight Gain,HIIT,Home,Moderate HIIT,59,Medium,295,160,312,76,2601,Conditioning
+Day 24,Weight Maintain,Cardio,Home,Jogging,71,Low,213,113,253,54,2039,Cardio fitness
+Day 10,Weight Maintain,Yoga,Gym,Vinyasa Yoga,74,Medium,370,124,237,53,2125,Mobility
+Day 23,Weight Maintain,Yoga,Home,Vinyasa Yoga,66,Low,330,125,206,63,2197,Mobility
+Day 6,Weight Maintain,Cardio,Gym,Jogging,57,Medium,456,115,217,65,2119,Cardio fitness
+Day 25,Weight Gain,HIIT,Gym,Moderate HIIT,53,Low,159,152,357,79,2402,Conditioning
+Day 20,Weight Gain,Cardio,Home,Light Cycling,70,Medium,350,162,341,75,2843,Endurance
+Day 8,Weight Maintain,Strength Training,Gym,Split Workout,68,Low,272,139,200,63,2087,Strength balance
+Day 3,Weight Maintain,Strength Training,Home,Split Workout,33,High,264,136,231,64,2114,Strength balance
+Day 27,Weight Gain,HIIT,Gym,Moderate HIIT,45,Low,135,171,322,69,2504,Conditioning
+Day 19,Weight Loss,Yoga,Home,Power Yoga,72,High,864,148,180,59,1608,Flexibility & metabolism
+Day 30,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",47,Low,235,145,175,60,1670,Rapid calorie burn
+Day 27,Weight Gain,HIIT,Gym,Moderate HIIT,31,Low,93,177,322,64,2834,Conditioning
+Day 3,Weight Maintain,Strength Training,Gym,Split Workout,39,High,312,115,204,63,2194,Strength balance
+Day 1,Weight Maintain,Strength Training,Home,Split Workout,50,Medium,300,129,227,61,2044,Strength balance
+Day 23,Weight Gain,Cardio,Home,Light Cycling,30,High,330,179,319,60,2825,Endurance
+Day 26,Weight Loss,HIIT,Home,"Burpees, Jump Squats",68,High,816,123,133,52,1851,Rapid calorie burn
+Day 7,Weight Maintain,Strength Training,Gym,Split Workout,68,Medium,340,136,228,63,2004,Strength balance
+Day 9,Weight Gain,HIIT,Gym,Moderate HIIT,33,Low,165,176,357,71,2795,Conditioning
+Day 23,Weight Maintain,Cardio,Home,Jogging,42,High,378,137,249,62,2070,Cardio fitness
+Day 11,Weight Maintain,Strength Training,Gym,Split Workout,46,High,552,133,220,50,2076,Strength balance
+Day 28,Weight Loss,Cardio,Home,Running / Cycling,66,High,792,140,137,44,1826,"Fat loss, heart health"
+Day 23,Weight Gain,HIIT,Home,Moderate HIIT,62,Medium,496,145,357,78,2677,Conditioning
+Day 23,Weight Loss,Cardio,Gym,Running / Cycling,73,High,803,127,135,54,1853,"Fat loss, heart health"
+Day 3,Weight Gain,Yoga,Home,Hatha Yoga,53,Medium,318,143,286,80,2460,Recovery
+Day 14,Weight Gain,Strength Training,Home,Compound Lifts,34,Medium,204,162,353,74,2961,Muscle growth
+Day 9,Weight Gain,Strength Training,Home,Compound Lifts,72,Medium,432,153,323,76,2979,Muscle growth
+Day 20,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",48,Low,240,142,176,40,1637,Rapid calorie burn
+Day 21,Weight Loss,Strength Training,Home,Circuit Training,74,High,888,144,172,42,1804,Muscle tone
+Day 5,Weight Maintain,HIIT,Home,Mixed HIIT,43,High,344,132,210,55,2182,Overall fitness
+Day 8,Weight Gain,Yoga,Home,Hatha Yoga,66,Medium,330,142,305,78,2576,Recovery
+Day 15,Weight Maintain,Cardio,Home,Jogging,50,Low,250,133,218,51,2104,Cardio fitness
+Day 28,Weight Maintain,Cardio,Gym,Jogging,59,Medium,413,134,229,62,2141,Cardio fitness
+Day 22,Weight Loss,Cardio,Gym,Running / Cycling,36,Medium,252,143,139,55,1785,"Fat loss, heart health"
+Day 29,Weight Maintain,HIIT,Gym,Mixed HIIT,35,Medium,175,140,208,58,2107,Overall fitness
+Day 18,Weight Gain,HIIT,Gym,Moderate HIIT,38,Medium,190,178,311,73,2993,Conditioning
+Day 20,Weight Maintain,Cardio,Home,Jogging,49,Medium,343,110,257,52,2028,Cardio fitness
+Day 26,Weight Maintain,Yoga,Home,Vinyasa Yoga,35,Medium,280,124,216,50,2052,Mobility
+Day 18,Weight Loss,Cardio,Gym,Running / Cycling,56,Medium,448,143,161,45,1675,"Fat loss, heart health"
+Day 30,Weight Maintain,Cardio,Home,Jogging,46,Medium,276,120,255,57,2105,Cardio fitness
+Day 1,Weight Maintain,HIIT,Gym,Mixed HIIT,65,High,585,127,251,55,2075,Overall fitness
+Day 23,Weight Loss,Cardio,Home,Running / Cycling,64,Low,320,144,180,43,1747,"Fat loss, heart health"
+Day 8,Weight Maintain,Yoga,Home,Vinyasa Yoga,34,Medium,170,117,237,56,2091,Mobility
+Day 8,Weight Loss,Yoga,Home,Power Yoga,47,Medium,235,137,168,46,1734,Flexibility & metabolism
+Day 25,Weight Maintain,Cardio,Home,Jogging,72,High,720,119,237,53,2193,Cardio fitness
+Day 11,Weight Loss,Cardio,Home,Running / Cycling,57,Low,285,146,142,44,1692,"Fat loss, heart health"
+Day 18,Weight Gain,Cardio,Home,Light Cycling,40,Medium,200,171,336,78,2677,Endurance
+Day 15,Weight Loss,Yoga,Home,Power Yoga,45,High,495,149,162,44,1710,Flexibility & metabolism
+Day 11,Weight Gain,Cardio,Home,Light Cycling,63,Low,315,155,331,68,2746,Endurance
+Day 2,Weight Gain,Yoga,Gym,Hatha Yoga,72,Low,216,153,352,77,2636,Recovery
+Day 11,Weight Maintain,Cardio,Home,Jogging,57,High,456,114,208,57,2130,Cardio fitness
+Day 27,Weight Loss,Yoga,Gym,Power Yoga,63,High,630,130,162,57,1676,Flexibility & metabolism
+Day 3,Weight Loss,Cardio,Gym,Running / Cycling,63,Low,315,146,157,54,1654,"Fat loss, heart health"
+Day 6,Weight Loss,Strength Training,Gym,Circuit Training,72,Medium,504,127,149,52,1805,Muscle tone
+Day 5,Weight Loss,HIIT,Home,"Burpees, Jump Squats",73,High,876,136,174,43,1656,Rapid calorie burn
+Day 29,Weight Loss,Strength Training,Gym,Circuit Training,45,Low,135,140,146,54,1748,Muscle tone
+Day 24,Weight Loss,HIIT,Home,"Burpees, Jump Squats",69,High,759,126,180,58,1760,Rapid calorie burn
+Day 14,Weight Maintain,Yoga,Gym,Vinyasa Yoga,66,Low,198,119,228,60,2029,Mobility
+Day 3,Weight Maintain,Strength Training,Home,Split Workout,40,Low,160,138,202,53,2083,Strength balance
+Day 7,Weight Gain,Yoga,Gym,Hatha Yoga,70,Medium,350,146,348,63,2748,Recovery
+Day 16,Weight Loss,Cardio,Gym,Running / Cycling,59,Medium,295,135,142,46,1616,"Fat loss, heart health"
+Day 9,Weight Loss,Cardio,Home,Running / Cycling,40,Low,160,125,156,41,1626,"Fat loss, heart health"
+Day 11,Weight Gain,HIIT,Gym,Moderate HIIT,37,Low,148,178,345,63,2827,Conditioning
+Day 9,Weight Maintain,Cardio,Gym,Jogging,60,Medium,360,111,228,53,2185,Cardio fitness
+Day 29,Weight Gain,Cardio,Home,Light Cycling,36,Medium,252,142,341,75,2994,Endurance
+Day 18,Weight Maintain,Strength Training,Home,Split Workout,41,High,369,118,221,65,2181,Strength balance
+Day 30,Weight Loss,Cardio,Gym,Running / Cycling,69,Low,276,135,154,47,1680,"Fat loss, heart health"
+Day 12,Weight Maintain,Strength Training,Gym,Split Workout,33,Medium,264,125,212,52,2019,Strength balance
+Day 7,Weight Loss,Yoga,Gym,Power Yoga,43,Low,172,134,162,52,1865,Flexibility & metabolism
+Day 21,Weight Maintain,HIIT,Home,Mixed HIIT,64,Medium,384,127,207,52,2027,Overall fitness
+Day 12,Weight Maintain,HIIT,Gym,Mixed HIIT,47,Low,141,114,226,53,2164,Overall fitness
+Day 5,Weight Gain,Cardio,Home,Light Cycling,64,High,576,162,285,61,2936,Endurance
+Day 18,Weight Gain,HIIT,Home,Moderate HIIT,32,Medium,160,166,308,78,2722,Conditioning
+Day 30,Weight Gain,Strength Training,Home,Compound Lifts,53,Medium,371,162,308,69,2591,Muscle growth
+Day 13,Weight Gain,HIIT,Gym,Moderate HIIT,71,High,568,167,351,63,2706,Conditioning
+Day 16,Weight Maintain,Cardio,Gym,Jogging,74,Medium,444,120,200,59,2196,Cardio fitness
+Day 1,Weight Loss,Yoga,Home,Power Yoga,75,Low,225,121,146,45,1858,Flexibility & metabolism
+Day 13,Weight Gain,Strength Training,Home,Compound Lifts,73,Low,219,147,313,71,2921,Muscle growth
+Day 23,Weight Maintain,HIIT,Gym,Mixed HIIT,56,Medium,448,116,223,57,2171,Overall fitness
+Day 17,Weight Loss,Yoga,Gym,Power Yoga,46,Medium,230,129,174,40,1806,Flexibility & metabolism
+Day 8,Weight Gain,Strength Training,Gym,Compound Lifts,45,Medium,360,153,323,62,2942,Muscle growth
+Day 19,Weight Maintain,Strength Training,Gym,Split Workout,73,Medium,438,113,256,54,2037,Strength balance
+Day 6,Weight Gain,Yoga,Home,Hatha Yoga,48,Low,240,164,340,63,2939,Recovery
+Day 18,Weight Maintain,Cardio,Gym,Jogging,31,High,372,126,219,58,2049,Cardio fitness
+Day 29,Weight Loss,Strength Training,Gym,Circuit Training,47,Medium,282,148,147,47,1717,Muscle tone
+Day 17,Weight Loss,Yoga,Home,Power Yoga,63,Low,189,134,168,50,1682,Flexibility & metabolism
+Day 19,Weight Gain,HIIT,Gym,Moderate HIIT,69,Low,345,161,358,69,2969,Conditioning
+Day 6,Weight Gain,Strength Training,Home,Compound Lifts,66,Medium,396,145,291,75,2925,Muscle growth
+Day 11,Weight Loss,Strength Training,Home,Circuit Training,48,Low,192,147,152,48,1747,Muscle tone
+Day 8,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",67,Medium,402,149,169,44,1863,Rapid calorie burn
+Day 6,Weight Loss,Yoga,Home,Power Yoga,60,High,600,129,168,56,1869,Flexibility & metabolism
+Day 15,Weight Gain,Strength Training,Gym,Compound Lifts,72,Medium,360,152,301,72,2504,Muscle growth
+Day 25,Weight Gain,HIIT,Home,Moderate HIIT,32,Medium,224,153,349,76,2558,Conditioning
+Day 4,Weight Gain,Cardio,Home,Light Cycling,37,Low,148,149,341,79,2430,Endurance
+Day 23,Weight Maintain,Strength Training,Home,Split Workout,56,High,504,134,243,61,2066,Strength balance
+Day 5,Weight Loss,Yoga,Home,Power Yoga,36,Medium,216,150,169,57,1782,Flexibility & metabolism
+Day 19,Weight Maintain,Yoga,Home,Vinyasa Yoga,50,Medium,300,112,222,53,2165,Mobility
+Day 9,Weight Gain,Yoga,Home,Hatha Yoga,31,High,279,174,336,62,2992,Recovery
+Day 14,Weight Gain,Cardio,Home,Light Cycling,70,High,700,157,343,60,2946,Endurance
+Day 4,Weight Maintain,HIIT,Gym,Mixed HIIT,75,High,900,137,234,65,2199,Overall fitness
+Day 19,Weight Gain,Strength Training,Home,Compound Lifts,71,High,639,140,324,80,2695,Muscle growth
+Day 28,Weight Loss,HIIT,Home,"Burpees, Jump Squats",46,Medium,276,145,171,51,1614,Rapid calorie burn
+Day 6,Weight Maintain,Strength Training,Gym,Split Workout,41,Low,164,131,207,65,2004,Strength balance
+Day 19,Weight Maintain,Strength Training,Home,Split Workout,64,Low,256,117,237,51,2068,Strength balance
+Day 24,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",30,Low,90,150,144,40,1711,Rapid calorie burn
+Day 11,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",64,Low,256,140,148,52,1755,Rapid calorie burn
+Day 23,Weight Loss,Yoga,Home,Power Yoga,36,Medium,180,128,159,59,1674,Flexibility & metabolism
+Day 22,Weight Loss,Yoga,Gym,Power Yoga,67,Low,268,124,177,47,1736,Flexibility & metabolism
+Day 28,Weight Maintain,Strength Training,Home,Split Workout,37,Low,148,129,236,60,2047,Strength balance
+Day 2,Weight Loss,Cardio,Home,Running / Cycling,42,Low,126,142,139,47,1612,"Fat loss, heart health"
+Day 25,Weight Gain,Yoga,Home,Hatha Yoga,64,Low,320,171,296,62,2415,Recovery
+Day 28,Weight Gain,Cardio,Gym,Light Cycling,72,Low,288,149,331,71,2665,Endurance
+Day 11,Weight Loss,Strength Training,Gym,Circuit Training,48,Medium,384,132,180,58,1637,Muscle tone
+Day 21,Weight Gain,HIIT,Home,Moderate HIIT,65,Low,260,158,344,62,2628,Conditioning
+Day 3,Weight Loss,Strength Training,Gym,Circuit Training,71,Low,355,132,155,50,1727,Muscle tone
+Day 27,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",35,Medium,245,126,139,43,1762,Rapid calorie burn
+Day 7,Weight Loss,HIIT,Home,"Burpees, Jump Squats",59,High,472,149,138,57,1750,Rapid calorie burn
+Day 4,Weight Maintain,Cardio,Home,Jogging,64,Low,256,131,208,64,2153,Cardio fitness
+Day 25,Weight Maintain,HIIT,Home,Mixed HIIT,74,Medium,518,136,235,58,2190,Overall fitness
+Day 16,Weight Maintain,Cardio,Gym,Jogging,67,High,670,133,208,56,2162,Cardio fitness
+Day 7,Weight Gain,Cardio,Home,Light Cycling,31,Low,155,150,349,62,2494,Endurance
+Day 9,Weight Maintain,Cardio,Gym,Jogging,55,Low,165,132,250,59,2118,Cardio fitness
+Day 17,Weight Gain,Yoga,Home,Hatha Yoga,74,Medium,592,155,338,79,2470,Recovery
+Day 21,Weight Maintain,Cardio,Gym,Jogging,53,High,530,115,235,65,2147,Cardio fitness
+Day 20,Weight Maintain,HIIT,Home,Mixed HIIT,70,Low,280,136,230,55,2152,Overall fitness
+Day 27,Weight Gain,Strength Training,Home,Compound Lifts,64,Low,320,171,344,77,2794,Muscle growth
+Day 10,Weight Gain,Yoga,Home,Hatha Yoga,48,High,576,152,327,60,2561,Recovery
+Day 5,Weight Gain,HIIT,Gym,Moderate HIIT,64,Low,256,167,349,70,2998,Conditioning
+Day 6,Weight Gain,Strength Training,Home,Compound Lifts,60,Medium,300,154,308,69,2642,Muscle growth
+Day 20,Weight Gain,HIIT,Gym,Moderate HIIT,50,Low,150,144,280,64,2645,Conditioning
+Day 25,Weight Maintain,Strength Training,Home,Split Workout,49,Medium,294,114,215,61,2045,Strength balance
+Day 12,Weight Gain,Yoga,Home,Hatha Yoga,72,Low,360,155,338,75,2628,Recovery
+Day 29,Weight Maintain,Yoga,Home,Vinyasa Yoga,56,High,672,130,216,59,2115,Mobility
+Day 25,Weight Maintain,Yoga,Gym,Vinyasa Yoga,69,High,828,140,219,50,2131,Mobility
+Day 21,Weight Gain,Cardio,Gym,Light Cycling,41,Low,205,144,316,67,2985,Endurance
+Day 29,Weight Gain,Strength Training,Home,Compound Lifts,64,High,640,160,296,73,2645,Muscle growth
+Day 15,Weight Gain,Cardio,Gym,Light Cycling,71,High,852,165,343,62,2548,Endurance
+Day 24,Weight Maintain,Strength Training,Home,Split Workout,36,Medium,180,128,255,55,2026,Strength balance
+Day 4,Weight Gain,Yoga,Gym,Hatha Yoga,43,Medium,258,167,304,75,2862,Recovery
+Day 27,Weight Loss,Yoga,Gym,Power Yoga,35,Low,175,124,154,56,1721,Flexibility & metabolism
+Day 8,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",57,Medium,456,143,131,56,1813,Rapid calorie burn
+Day 7,Weight Gain,Cardio,Gym,Light Cycling,37,Low,185,160,350,66,2741,Endurance
+Day 7,Weight Maintain,Yoga,Home,Vinyasa Yoga,73,Low,365,113,224,53,2009,Mobility
+Day 2,Weight Gain,Cardio,Home,Light Cycling,49,Low,196,170,327,69,2702,Endurance
+Day 22,Weight Gain,Yoga,Home,Hatha Yoga,50,High,550,158,340,64,2609,Recovery
+Day 14,Weight Gain,Yoga,Gym,Hatha Yoga,74,High,592,147,325,67,2854,Recovery
+Day 18,Weight Loss,HIIT,Home,"Burpees, Jump Squats",31,Low,93,123,150,59,1704,Rapid calorie burn
+Day 9,Weight Loss,Cardio,Home,Running / Cycling,40,High,320,126,146,60,1861,"Fat loss, heart health"
+Day 5,Weight Maintain,HIIT,Gym,Mixed HIIT,67,Medium,536,119,231,64,2164,Overall fitness
+Day 1,Weight Loss,Strength Training,Home,Circuit Training,70,Low,210,150,143,55,1738,Muscle tone
+Day 22,Weight Maintain,Cardio,Gym,Jogging,67,Medium,402,134,222,53,2050,Cardio fitness
+Day 30,Weight Gain,Yoga,Gym,Hatha Yoga,42,High,420,161,286,61,2890,Recovery
+Day 9,Weight Loss,Yoga,Gym,Power Yoga,63,Medium,504,134,161,46,1669,Flexibility & metabolism
+Day 10,Weight Maintain,HIIT,Home,Mixed HIIT,45,Medium,270,127,212,58,2157,Overall fitness
+Day 14,Weight Loss,Yoga,Gym,Power Yoga,36,Low,144,141,151,52,1874,Flexibility & metabolism
+Day 5,Weight Gain,Yoga,Home,Hatha Yoga,30,High,360,152,291,65,2589,Recovery
+Day 6,Weight Loss,Cardio,Gym,Running / Cycling,74,Low,222,120,149,45,1622,"Fat loss, heart health"
+Day 12,Weight Maintain,Cardio,Home,Jogging,56,Low,224,131,236,64,2133,Cardio fitness
+Day 14,Weight Gain,Cardio,Gym,Light Cycling,40,Medium,280,143,290,74,2470,Endurance
+Day 12,Weight Maintain,Strength Training,Gym,Split Workout,45,High,450,124,224,51,2013,Strength balance
+Day 16,Weight Maintain,Strength Training,Home,Split Workout,42,Low,210,137,218,50,2166,Strength balance
+Day 14,Weight Maintain,Yoga,Home,Vinyasa Yoga,66,Medium,330,110,204,62,2065,Mobility
+Day 2,Weight Maintain,Strength Training,Gym,Split Workout,47,Low,141,119,203,62,2132,Strength balance
+Day 16,Weight Loss,Cardio,Gym,Running / Cycling,67,Low,268,141,179,52,1837,"Fat loss, heart health"
+Day 27,Weight Gain,HIIT,Gym,Moderate HIIT,32,High,288,177,348,72,2991,Conditioning
+Day 27,Weight Maintain,HIIT,Home,Mixed HIIT,47,Medium,329,128,230,59,2147,Overall fitness
+Day 9,Weight Loss,Yoga,Home,Power Yoga,31,Low,124,125,152,52,1652,Flexibility & metabolism
+Day 28,Weight Gain,Cardio,Gym,Light Cycling,73,High,584,155,313,74,2861,Endurance
+Day 15,Weight Gain,Strength Training,Home,Compound Lifts,49,Low,196,141,281,66,2886,Muscle growth
+Day 11,Weight Gain,Cardio,Home,Light Cycling,41,Medium,328,161,308,70,2779,Endurance
+Day 3,Weight Loss,Strength Training,Home,Circuit Training,73,Medium,365,124,155,44,1797,Muscle tone
+Day 23,Weight Gain,HIIT,Gym,Moderate HIIT,56,High,616,173,338,61,2442,Conditioning
+Day 15,Weight Loss,HIIT,Home,"Burpees, Jump Squats",44,Medium,220,130,139,58,1771,Rapid calorie burn
+Day 5,Weight Maintain,HIIT,Gym,Mixed HIIT,62,Medium,372,121,214,65,2053,Overall fitness
+Day 16,Weight Gain,Strength Training,Gym,Compound Lifts,41,Medium,328,176,360,67,2509,Muscle growth
+Day 28,Weight Loss,Strength Training,Gym,Circuit Training,45,High,450,124,169,56,1731,Muscle tone
+Day 25,Weight Gain,HIIT,Home,Moderate HIIT,57,Medium,285,170,306,78,2893,Conditioning
+Day 30,Weight Maintain,Yoga,Gym,Vinyasa Yoga,51,Medium,255,134,218,54,2072,Mobility
+Day 23,Weight Loss,Cardio,Gym,Running / Cycling,74,High,592,131,162,47,1768,"Fat loss, heart health"
+Day 22,Weight Gain,HIIT,Gym,Moderate HIIT,58,Low,174,143,348,67,2935,Conditioning
+Day 21,Weight Maintain,Strength Training,Home,Split Workout,57,Medium,456,117,203,51,2180,Strength balance
+Day 28,Weight Maintain,Strength Training,Gym,Split Workout,42,Medium,294,127,230,59,2092,Strength balance
+Day 24,Weight Gain,Cardio,Home,Light Cycling,73,High,803,150,353,67,2403,Endurance
+Day 11,Weight Gain,Cardio,Gym,Light Cycling,44,High,528,177,348,80,2545,Endurance
+Day 10,Weight Loss,HIIT,Gym,"Burpees, Jump Squats",32,High,320,121,158,59,1703,Rapid calorie burn
+Day 1,Weight Maintain,HIIT,Home,Mixed HIIT,30,Medium,180,128,200,53,2037,Overall fitness

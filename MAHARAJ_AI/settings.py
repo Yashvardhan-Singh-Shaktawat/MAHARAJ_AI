@@ -70,15 +70,37 @@ TEMPLATES = [
 WSGI_APPLICATION = 'MAHARAJ_AI.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/5.2/ref/settings/#databases
+# Session Engine: Use signed_cookies for serverless compatibility (no DB writes for sessions)
+SESSION_ENGINE = 'django.contrib.sessions.backends.signed_cookies'
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+# Database Setup
+import os
+import shutil
+
+IS_VERCEL = 'VERCEL' in os.environ or str(BASE_DIR).startswith('/var/task')
+
+if IS_VERCEL:
+    tmp_db = Path('/tmp/db.sqlite3')
+    orig_db = BASE_DIR / 'db.sqlite3'
+    if orig_db.exists() and not tmp_db.exists():
+        try:
+            shutil.copy2(orig_db, tmp_db)
+        except Exception:
+            pass
+    db_path = tmp_db if tmp_db.exists() else orig_db
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': db_path,
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
